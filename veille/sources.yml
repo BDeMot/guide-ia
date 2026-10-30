@@ -110,23 +110,23 @@ sources:
     site: https://newsletter.pragmaticengineer.com/
     flux: https://newsletter.pragmaticengineer.com/feed
     chapitres: [2, 10, 17]
-    derniere_veille: null
+    derniere_veille: 2026-10-30
     notes: Beaucoup de contenus payants ou d'actualité. Retenir les enquêtes de terrain et les interviews d'auteurs de référence ; préciser qui parle (Orosz ou l'invité).
 
   - nom: Adam Tornhill (CodeScene)
     site: https://codescene.com/blog
     flux: https://codescene.com/blog/rss.xml
     chapitres: [11, 12]
-    derniere_veille: null
-    notes: Blog d'entreprise : ne retenir que les articles signés Tornhill ou fondés sur des données publiées ; signaler l'intérêt commercial.
+    derniere_veille: 2026-10-30
+    notes: Blog d'entreprise : ne retenir que les articles signés Tornhill ou Markus Borg (chercheur associé à l'Université de Lund) ou fondés sur des données publiées ; signaler l'intérêt commercial.
 
   - nom: Steve Yegge et Gene Kim
     site: https://steve-yegge.medium.com/
     flux: https://steve-yegge.medium.com/feed
     archive: https://itrevolution.com/
     chapitres: [1, 10, 16, 17]
-    derniere_veille: null
-    notes: Positions très favorables aux agents, utiles comme contrepoint. Le flux d'IT Revolution (https://itrevolution.com/feed/) est un flux d'éditeur, très bruité ; le consulter manuellement pour Gene Kim.
+    derniere_veille: 2026-10-30
+    notes: Positions très favorables aux agents, utiles comme contrepoint. Medium refuse la lecture automatique (403) ; lire le texte complet dans le flux RSS. Le flux d'IT Revolution (https://itrevolution.com/feed/) est un flux d'éditeur, très bruité ; le consulter manuellement pour Gene Kim.
 
   - nom: Mitchell Hashimoto et Armin Ronacher
     site: https://lucumr.pocoo.org/

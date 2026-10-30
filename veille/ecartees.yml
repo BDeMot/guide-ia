@@ -144,3 +144,54 @@ ecartees:
     source: Charity Majors
     date_examen: 2026-10-30
     raison: Éthique, hors périmètre.
+  # Passage 3 — 2026-10-30
+  - url: https://newsletter.pragmaticengineer.com/p/software-engineering-with-llms-in-2025
+    titre: "Software engineering with LLMs in 2025: reality check"
+    source: Gergely Orosz (The Pragmatic Engineer)
+    date_examen: 2026-10-30
+    raison: Bon état des lieux mi-2025, mais l'essentiel se retrouve dans l'article de Laura Tacho, plus récent.
+  - url: https://newsletter.pragmaticengineer.com/p/ai-tooling-2026
+    titre: AI Tooling for Software Engineers in 2026
+    source: Gergely Orosz (The Pragmatic Engineer)
+    date_examen: 2026-10-30
+    raison: Surtout un classement d'outils et de modèles, périssable.
+  - url: https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2
+    titre: "AI's impact on software engineers in 2026: key trends, Part 2"
+    source: Gergely Orosz (The Pragmatic Engineer)
+    date_examen: 2026-10-30
+    raison: Payant, non lu ; suite de l'article retenu au chapitre 2.
+    reconsiderer: true
+  - url: https://newsletter.pragmaticengineer.com/p/are-ai-agents-actually-slowing-us
+    titre: Are AI agents actually slowing us down?
+    source: Gergely Orosz (The Pragmatic Engineer)
+    date_examen: 2026-10-30
+    raison: Payant, non lu ; potentiellement utile pour le chapitre 3.
+    reconsiderer: true
+  - url: https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews
+    titre: What is happening with code reviews?
+    source: Gergely Orosz (The Pragmatic Engineer)
+    date_examen: 2026-10-30
+    raison: Payant, non lu ; potentiellement utile pour le chapitre 14.
+    reconsiderer: true
+  - url: https://codescene.com/blog/making-legacy-code-ai-ready-benchmarks-on-agentic-refactoring
+    titre: "Making Legacy Code AI-Ready: Benchmarks on Agentic Refactoring"
+    source: Adam Tornhill (CodeScene)
+    date_examen: 2026-10-30
+    raison: Reprend le jeu de données de l'article FORGE retenu ; gains annoncés sans variance.
+  - url: https://codescene.com/blog/agentic-ai-coding-best-practice-patterns-for-speed-with-quality
+    titre: "Agentic AI Coding: Best Practice Patterns for Speed with Quality"
+    source: Adam Tornhill (CodeScene)
+    date_examen: 2026-10-30
+    raison: Patterns intégrés aux produits CodeScene ; preuves internes non vérifiables.
+  - url: https://itrevolution.com/articles/vibe-coding-the-revolutionary-approach-transforming-software-development/
+    titre: "Vibe Coding: The Revolutionary Approach Transforming Software Development"
+    source: Steve Yegge et Gene Kim
+    date_examen: 2026-10-30
+    raison: Résumé promotionnel du livre écrit par l'éditeur, chiffres non sourcés. Le livre (qui appelle « vibe coding » tout code produit par l'IA, désaccord utile au chapitre 1) n'a pas été lu.
+    reconsiderer: true
+  - url: https://steve-yegge.medium.com/vibe-maintainer-a2273a841040
+    titre: Vibe Maintainer
+    source: Steve Yegge et Gene Kim
+    date_examen: 2026-10-30
+    raison: Plafond atteint, non lu ; candidat pour le chapitre 12 ou 14.
+    reconsiderer: true
