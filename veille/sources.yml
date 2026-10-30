@@ -82,29 +82,29 @@ sources:
     site: https://michaelfeathers.substack.com/
     flux: https://michaelfeathers.substack.com/feed
     chapitres: [12, 13]
-    derniere_veille: null
+    derniere_veille: 2026-10-30
     notes: Publie rarement (dernier billet en juin 2025). Chercher aussi interviews et le livre « AI Assisted Programming » (Leanpub).
 
   - nom: Grady Booch
     site: https://x.com/Grady_Booch
     flux: manuel
     chapitres: [11, 14, 17]
-    derniere_veille: null
+    derniere_veille: 2026-10-30
     notes: Pas de blog ; positions exprimées en podcasts et conférences (ex. The Pragmatic Engineer, février 2026).
 
   - nom: Dave Farley
     site: https://www.youtube.com/@ModernSoftwareEngineeringYT
     flux: https://www.youtube.com/feeds/videos.xml?channel_id=UCCfqyGl3nq_V0bo64CjZh8g
     chapitres: [4, 7, 13, 14]
-    derniere_veille: null
-    notes: Surtout des vidéos ; une vidéo n'est retenue que si une transcription ou un résumé fiable permet d'en vérifier le contenu. Son blog (davefarley.net) est inactif depuis 2022.
+    derniere_veille: 2026-10-30
+    notes: La chaîne accueille aussi d'autres auteurs (Emily Bache) ; indiquer le vrai auteur. Surtout des vidéos ; une vidéo n'est retenue que si une transcription ou un résumé fiable permet d'en vérifier le contenu. Son blog (davefarley.net) est inactif depuis 2022.
 
   - nom: Charity Majors
     site: https://charity.wtf/
     flux: https://charity.wtf/feed/
     chapitres: [5, 14, 17]
-    derniere_veille: null
-    notes: Observabilité, production, carrières et juniors.
+    derniere_veille: 2026-10-30
+    notes: Observabilité, production, carrières et juniors. Publie aussi sur le blog de Honeycomb (https://www.honeycomb.io/blog), à consulter manuellement.
 
   - nom: Gergely Orosz (The Pragmatic Engineer)
     site: https://newsletter.pragmaticengineer.com/

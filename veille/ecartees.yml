@@ -91,3 +91,56 @@ ecartees:
     source: Andrej Karpathy
     date_examen: 2026-10-30
     raison: Inaccessible (X) ; la distinction est couverte par la transcription Sequoia.
+  # Passage 2 — 2026-10-30
+  - url: https://leanpub.com/ai-assisted-programming
+    titre: AI Assisted Programming
+    source: Michael Feathers
+    date_examen: 2026-10-30
+    raison: Livre payant, achevé à 30 % (mise à jour du 26 mai 2025) ; seule la table des matières est lisible. À revoir quand il sera terminé.
+    reconsiderer: true
+  - url: https://techleadjournal.dev/episodes/195/
+    titre: "#195 - Working Effectively with Legacy Code and AI Coding Assistant"
+    source: Michael Feathers
+    date_examen: 2026-10-30
+    raison: Octobre 2024, antérieur à la période couverte.
+  - url: http://mvark.blogspot.com/2026/04/uncle-bob-vs-grady-booch-rethinking.html
+    titre: Post X de Booch sur la relecture du code des agents (reprise)
+    source: Grady Booch
+    date_examen: 2026-10-30
+    raison: Post original introuvable, connu par un blog personnel ; la position est documentée de façon vérifiable dans l'interview InfoQ retenue.
+  - url: https://www.youtube.com/watch?v=jScItKhruN0
+    titre: Why Good Codebases Go Bad (And How to Stop It)
+    source: Dave Farley
+    date_examen: 2026-10-30
+    raison: Pas de contenu sur l'IA ; redite pour le chapitre 12.
+  - url: https://www.youtube.com/watch?v=ydAin2IWaQo
+    titre: Agentic AI coding BREAKS Mob Programming (Here's How To Fix It)
+    source: Dave Farley
+    date_examen: 2026-10-30
+    raison: Plafond atteint ; lu en partie. Apprentissage des juniors en mob programming, pour le chapitre 5.
+    reconsiderer: true
+  - url: https://www.youtube.com/watch?v=qzm5sSnGm2Q
+    titre: This Software Design Mindset Almost Feels Like Cheating
+    source: Dave Farley
+    date_examen: 2026-10-30
+    raison: Compilation d'anciens épisodes sur le design évolutif, sans contenu sur l'IA.
+  - url: https://charity.wtf/p/my-hypothetical-srecon26-keynote
+    titre: My (hypothetical) SRECon26 keynote
+    source: Charity Majors
+    date_examen: 2026-10-30
+    raison: Récit de son changement de position, peu d'arguments propres.
+  - url: https://charity.wtf/p/confessions-of-an-unrepentant-slop
+    titre: Confessions of an Unrepentant Slop Snob
+    source: Charity Majors
+    date_examen: 2026-10-30
+    raison: Porte sur les normes de communication ; le code n'est traité qu'en passant.
+  - url: https://charity.wtf/p/in-defense-of-ai-mandates
+    titre: In defense of AI mandates
+    source: Charity Majors
+    date_examen: 2026-10-30
+    raison: Management de l'adoption de l'IA, hors périmètre.
+  - url: https://charity.wtf/p/make-ai-boring-again
+    titre: Is it ethical to use AI?
+    source: Charity Majors
+    date_examen: 2026-10-30
+    raison: Éthique, hors périmètre.
