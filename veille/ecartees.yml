@@ -1,0 +1,11 @@
+# Publications examinées par la veille et non retenues.
+# Évite de les réexaminer à chaque passage.
+#
+# Format :
+#   - url: URL de la publication
+#     titre: titre exact
+#     source: nom de la source (veille/sources.yml)
+#     date_examen: AAAA-MM-JJ
+#     raison: pourquoi elle n'a pas été retenue
+
+ecartees: []
