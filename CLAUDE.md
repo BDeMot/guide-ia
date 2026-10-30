@@ -124,7 +124,7 @@ Le nombre de références et leur répartition par site sont donnés par `npm ru
 
 Les articles sont directement classés sous les 17 chapitres de notre livre.
 
-Ces pages sont publiées sous forme de site Docus (Nuxt Content), modifiable avec Nuxt Studio : `npm run dev`, puis http://localhost:3000.
+Ces pages sont publiées sous forme de site Docus (Nuxt Content), modifiable avec Nuxt Studio : `npm run dev`, puis http://localhost:4170 (port fixé dans `nuxt.config.ts` ; ne pas utiliser 3000, réservé à d'autres applications).
 
 **Il ne faut pas créer des sections séparées par auteur, site ou source.**
 

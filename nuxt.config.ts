@@ -3,6 +3,11 @@ export default defineNuxtConfig({
 
   modules: ['nuxt-studio'],
 
+  // Port 3000 is taken by other local Nuxt apps.
+  devServer: {
+    port: 4170,
+  },
+
   site: {
     name: 'Guide IA agentique',
   },

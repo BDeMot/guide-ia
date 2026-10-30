@@ -24,7 +24,7 @@ npm install
 npm run dev
 ```
 
-Le site est servi sur http://localhost:3000. En local, Nuxt Studio s'ouvre avec le bouton flottant en bas à gauche et modifie directement les fichiers de `content/`.
+Le site est servi sur http://localhost:4170 (port fixé dans `nuxt.config.ts`, car 3000 est pris par d'autres applications). En local, Nuxt Studio s'ouvre avec le bouton flottant en bas à gauche et modifie directement les fichiers de `content/`.
 
 ## Publication
 
