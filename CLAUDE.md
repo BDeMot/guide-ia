@@ -113,13 +113,17 @@ D'autres auteurs pourront être ajoutés, notamment Kent Beck, Martin Fowler et 
 
 ### Corpus existant
 
-Nous avons déjà constitué un document Markdown :
+Le corpus a d'abord été constitué dans un document Markdown unique (`guide_ia_agentique_corpus_v1_2_integre.md`, conservé dans l'historique git). Depuis la v1.3, il est découpé en pages dans le dossier `content/`, qui est la seule version maintenue :
 
-`guide_ia_agentique_corpus_v1_2_integre.md`
+- `content/1.presentation.md` : périmètre, sources et mode de lecture du corpus.
+- Un dossier par partie (`content/2.partie-1-…` à `content/6.partie-5-…`), une page par chapitre.
+- `content/7.annexes/` : lacunes éditoriales et principes de rédaction.
 
-Cette version est annoncée comme contenant 65 articles, dont 51 issus du blog d'Addy Osmani et 14 de claude.dev.
+La v1.3 contient 89 références, dont 51 issues du blog d'Addy Osmani, 14 de claude.dev et 24 d'autres sources (martinfowler.com, Kent Beck, John Ousterhout, Robert C. Martin).
 
 Les articles sont directement classés sous les 17 chapitres de notre livre.
+
+Ces pages sont publiées sous forme de site Docus (Nuxt Content), modifiable avec Nuxt Studio : `npm run dev`, puis http://localhost:3000.
 
 **Il ne faut pas créer des sections séparées par auteur, site ou source.**
 
@@ -199,7 +203,7 @@ Le guide devra respecter plusieurs exigences :
 
 Ce projet doit être considéré comme un projet éditorial et documentaire, et non comme une application logicielle à développer.
 
-Le fichier Markdown existant constitue le point de départ.
+Les pages du dossier `content/` constituent le point de départ.
 
 Il faut préserver les cinq parties, les 17 chapitres et l'intégration directe des références dans les chapitres.
 

@@ -1,0 +1,16 @@
+{
+  "name": "guide-ia-agentique",
+  "description": "Corpus documentaire du guide du Software Engineer à l'ère de l'IA agentique",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "docus": "^5.15.0",
+    "nuxt": "^4.5.2",
+    "nuxt-studio": "^1.8.0"
+  }
+}
