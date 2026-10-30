@@ -6,7 +6,16 @@ Le projet, sa méthode et ses principes sont décrits dans [CLAUDE.md](CLAUDE.md
 
 ## Contenu
 
-Le corpus est dans `content/` : une page de présentation, un dossier par partie du livre avec une page par chapitre, et des annexes. Les préfixes numériques (`2.`, `07.`…) fixent l'ordre de la navigation et n'apparaissent pas dans les URL.
+Le corpus est dans `content/` : une page de présentation, un dossier par partie du livre avec une page par chapitre, les synthèses par chapitre et des annexes. Les préfixes numériques (`2.`, `07.`…) fixent l'ordre de la navigation et n'apparaissent pas dans les URL.
+
+## Veille et synthèses
+
+Le corpus est enrichi par un agent IA, avec deux commandes Claude Code :
+
+- `/veille` : ajoute les nouvelles publications des sources de `veille/sources.yml` et écrit un rapport dans `veille/rapports/`.
+- `/synthese 13` ou `/synthese tous` : rédige la synthèse des positions des auteurs d'un chapitre, dans `content/7.syntheses/`.
+
+`npm run check` contrôle la cohérence du corpus : URL en double, total annoncé, citations des synthèses.
 
 ## Lancer le site en local
 

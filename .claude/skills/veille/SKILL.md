@@ -16,6 +16,7 @@ Pour chaque source de `veille/sources.yml` :
 - Lire le flux (`flux`) ou, s'il vaut `manuel`, la page `archive` ou `site`, complétée par une recherche web ciblée sur l'auteur et la thèse.
 - Ne garder que les publications postérieures à `derniere_veille`. Si `derniere_veille` vaut `null`, remonter jusqu'au 1er janvier 2025.
 - Écarter sans les lire les URL déjà présentes dans `content/` (`grep -rF "<url>" content/`) ou dans `veille/ecartees.yml`.
+- Ajouter aux candidats les publications de `veille/ecartees.yml` marquées `reconsiderer: true` : de bonnes publications écartées seulement à cause du plafond d'un passage précédent. Si elles sont retenues, les retirer de `ecartees.yml`.
 - Appliquer les consignes du champ `notes` de la source.
 
 ## 2. Sélectionner
@@ -34,7 +35,7 @@ Une publication n'est retenue que si elle apporte quelque chose à un chapitre p
 
 Limites : 10 ajouts au plus par passage, et au plus 4 par nouvelle source (`derniere_veille: null`). Choisir les plus utiles au livre, pas les plus récents.
 
-Chaque publication écartée après examen est ajoutée à `veille/ecartees.yml`, avec une raison d'une ligne.
+Chaque publication écartée après examen est ajoutée à `veille/ecartees.yml`, avec une raison d'une ligne. Une publication utile écartée seulement à cause du plafond reçoit `reconsiderer: true` et, si possible, le chapitre visé dans la raison. Les publications hors sujet repérées sur leur seul titre n'y sont pas listées : le rapport en donne le nombre.
 
 ## 3. Lire à la source
 

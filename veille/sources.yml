@@ -67,15 +67,15 @@ sources:
     site: https://simonwillison.net/
     flux: https://simonwillison.net/atom/entries/
     chapitres: [3, 8, 9, 10, 14]
-    derniere_veille: null
-    notes: Très prolifique. Le flux « entries » exclut les liens et citations courtes ; ne garder que les articles de fond (patterns, sécurité, injection de prompt).
+    derniere_veille: 2026-10-30
+    notes: Très prolifique. Le flux « entries » ne remonte que quelques semaines ; pour le passé, utiliser les pages de tags (coding-agents, ai-assisted-programming, prompt-injection). Il exclut les liens et citations courtes ; ne garder que les articles de fond (patterns, sécurité, injection de prompt).
 
   - nom: Recherche empirique (DORA, METR, Nicole Forsgren)
     site: https://dora.dev/research/
     flux: https://metr.org/feed.xml
     archive: https://dora.dev/research/
     chapitres: [2, 3, 5, 17]
-    derniere_veille: null
+    derniere_veille: 2026-10-30
     notes: Le flux couvre METR ; DORA et Forsgren sont à consulter manuellement (rapports annuels, livre « Frictionless »). Priorité aux études mesurées ; signaler méthode, échantillon et limites.
 
   - nom: Michael Feathers
@@ -148,5 +148,5 @@ sources:
     site: https://karpathy.bearblog.dev/
     flux: https://karpathy.bearblog.dev/feed/?type=rss
     chapitres: [1, 3, 17]
-    derniere_veille: null
-    notes: A popularisé le terme « vibe coding ». Beaucoup de billets portent sur la recherche en IA ; ne garder que ceux qui concernent le développement logiciel.
+    derniere_veille: 2026-10-30
+    notes: Le flux répond 404 sans User-Agent de navigateur. A popularisé le terme « vibe coding ». Beaucoup de billets portent sur la recherche en IA ; ne garder que ceux qui concernent le développement logiciel.

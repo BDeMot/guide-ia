@@ -117,9 +117,10 @@ Le corpus a d'abord été constitué dans un document Markdown unique (`guide_ia
 
 - `content/1.presentation.md` : périmètre, sources et mode de lecture du corpus.
 - Un dossier par partie (`content/2.partie-1-…` à `content/6.partie-5-…`), une page par chapitre.
-- `content/7.annexes/` : lacunes éditoriales et principes de rédaction.
+- `content/7.syntheses/` : une synthèse par chapitre, rédigée par un agent IA (voir §10).
+- `content/8.annexes/` : lacunes éditoriales et principes de rédaction.
 
-La v1.3 contient 89 références, dont 51 issues du blog d'Addy Osmani, 14 de claude.dev et 24 d'autres sources (martinfowler.com, Kent Beck, John Ousterhout, Robert C. Martin).
+Le nombre de références et leur répartition par site sont donnés par `npm run check` et repris dans `content/1.presentation.md`.
 
 Les articles sont directement classés sous les 17 chapitres de notre livre.
 
@@ -220,3 +221,23 @@ Ne pas rédiger spontanément l'intégralité du livre. La recherche documentair
 Un ouvrage qui enseigne non seulement **comment travailler avec des agents IA**, mais surtout **comment rester un ingénieur logiciel compétent, autonome, critique et responsable lorsque les agents réalisent une part croissante du travail de développement**.
 
 Le livre doit aider son lecteur à devenir un meilleur ingénieur grâce à l'IA, et non simplement un utilisateur plus habile d'outils de génération de code.
+## 10. Veille et synthèses
+
+Le corpus est enrichi par un agent IA, lancé à la demande pour l'instant. Deux skills décrivent son travail ; leurs règles font foi :
+
+- `/veille` (`.claude/skills/veille/SKILL.md`) examine les nouvelles publications des sources de `veille/sources.yml`, ajoute sous leur chapitre principal celles qui éclairent la thèse du livre, et commite directement sur `main`.
+- `/synthese <n°|tous>` (`.claude/skills/synthese/SKILL.md`) rédige, pour un chapitre, une synthèse des positions des auteurs : points d'accord, points de désaccord, état des preuves, angles morts.
+
+Fichiers de veille :
+
+- `veille/sources.yml` : sources suivies, flux et date de dernière veille. C'est une liste de veille, pas une organisation du corpus : la règle « pas de section par auteur » (§5) reste valable.
+- `veille/ecartees.yml` : publications examinées et non retenues, avec la raison.
+- `veille/rapports/` : un rapport par passage (ajouts, rejets, points à vérifier).
+
+Règles communes :
+
+- Toute référence est lue à sa source avant d'être ajoutée. Ce qui n'a pas pu être lu en entier est marqué **À vérifier**.
+- Format d'une entrée : `- **Central|Complémentaire · Site** [Titre exact](URL) — Auteur, date. …`, sans crochets autour de l'étiquette (Nuxt Studio et Nuxt Content les réécrivent).
+- Une synthèse ne cite que les références de son chapitre. Elle est marquée « Rédigée par un agent IA » et porte un `statut` (`non relue` ou `relue`). Seul Benjamin passe une synthèse en `relue`.
+- Une synthèse n'est pas une rédaction du livre (étape D) : elle prépare les étapes B et C.
+- `npm run check` doit réussir avant chaque commit.
