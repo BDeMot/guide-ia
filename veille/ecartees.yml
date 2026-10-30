@@ -254,3 +254,14 @@ ecartees:
     source: Hamel Husain et Chip Huyen
     date_examen: 2026-10-30
     raison: Construction d'applications LLM, pas ingénierie logicielle avec agents.
+  # Passage 5 — 2026-10-30 (craftsmanship et agents)
+  - url: https://dev.to/sdiamante13/the-most-underrated-skill-in-the-ai-coding-era-f6
+    titre: The Most Underrated Skill in the AI Coding Era
+    source: hors sources suivies
+    date_examen: 2026-10-30
+    raison: Opinion sans donnée ni expérience ; la thèse (le refactoring compte plus avec les agents) est mieux argumentée par Beck, Farley et Gorman.
+  - url: https://www.devclass.com/development/2026/02/21/should-there-be-a-new-manifesto-for-ai-development/4091612
+    titre: "From Agile to AI: Anniversary workshop says test-driven development ideal for AI coding"
+    source: hors sources suivies
+    date_examen: 2026-10-30
+    raison: Compte rendu de presse ; le rapport primaire de Thoughtworks a été ajouté au chapitre 13.

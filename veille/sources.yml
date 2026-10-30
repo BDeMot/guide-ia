@@ -150,3 +150,10 @@ sources:
     chapitres: [1, 3, 17]
     derniere_veille: 2026-10-30
     notes: Le flux répond 404 sans User-Agent de navigateur. A popularisé le terme « vibe coding ». Beaucoup de billets portent sur la recherche en IA ; ne garder que ceux qui concernent le développement logiciel.
+
+  - nom: Jason Gorman (Codemanship)
+    site: https://codemanship.wordpress.com/
+    flux: https://codemanship.wordpress.com/feed/
+    chapitres: [4, 10, 11, 13]
+    derniere_veille: 2026-10-30
+    notes: Défenseur du software craftsmanship (TDD, refactoring, intégration continue) appliqué aux agents. Seule l'interview SE Radio 732 a été examinée ; le blog reste à parcourir depuis janvier 2025.
