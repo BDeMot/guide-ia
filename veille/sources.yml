@@ -133,7 +133,7 @@ sources:
     flux: https://lucumr.pocoo.org/feed.atom
     archive: https://mitchellh.com/writing
     chapitres: [9, 10, 12]
-    derniere_veille: null
+    derniere_veille: 2026-10-30
     notes: Second flux, pour Hashimoto, https://mitchellh.com/feed.xml. Retours détaillés de praticiens seniors.
 
   - nom: Hamel Husain et Chip Huyen
@@ -141,7 +141,7 @@ sources:
     flux: https://hamel.dev/index.xml
     archive: https://huyenchip.com/blog/
     chapitres: [3, 13]
-    derniere_veille: null
+    derniere_veille: 2026-10-30
     notes: Second flux, pour Chip Huyen, https://huyenchip.com/feed.xml (peu actif depuis janvier 2025). Évaluations et AI engineering ; distinguer évaluation de modèles et tests de logiciel.
 
   - nom: Andrej Karpathy

@@ -195,3 +195,62 @@ ecartees:
     date_examen: 2026-10-30
     raison: Plafond atteint, non lu ; candidat pour le chapitre 12 ou 14.
     reconsiderer: true
+  # Passage 4 — 2026-10-30
+  - url: https://mitchellh.com/writing/non-trivial-vibing
+    titre: Vibing a Non-Trivial Ghostty Feature
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Plafond atteint. Excellente étude de cas chiffrée (16 sessions, coût, « anti-slop session », revue manuelle) ; pour le chapitre 10 ou 12.
+    reconsiderer: true
+  - url: https://lucumr.pocoo.org/2025/6/12/agentic-coding/
+    titre: Agentic Coding Recommendations
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Plafond atteint ; en partie lié à un outil et à un langage. Pour les chapitres 9 et 11.
+    reconsiderer: true
+  - url: https://lucumr.pocoo.org/2025/7/30/things-that-didnt-work/
+    titre: Agentic Coding Things That Didn't Work
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Trop lié aux fonctionnalités d'un outil.
+  - url: https://lucumr.pocoo.org/2026/1/18/agent-psychosis/
+    titre: "Agent Psychosis: Are We Going Insane?"
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Surtout polémique ; l'argument central est mieux posé dans The Final Bottleneck.
+  - url: https://lucumr.pocoo.org/2026/3/5/theseus/
+    titre: AI And The Ship of Theseus
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Licences et copyright des réécritures, hors périmètre.
+  - url: https://lucumr.pocoo.org/2026/8/22/fast-hard-code/
+    titre: Fast and Hard Code
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Observation sur le choix des langages, sans méthode ni mesure.
+  - url: https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/
+    titre: "Better Models: Worse Tools"
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Bug précis d'un modèle donné, trop périssable.
+  - url: https://lucumr.pocoo.org/2025/9/29/90-percent/
+    titre: 90%
+    source: Mitchell Hashimoto et Armin Ronacher
+    date_examen: 2026-10-30
+    raison: Plafond atteint, non lu en détail ; candidat pour le chapitre 3 ou 11.
+    reconsiderer: true
+  - url: https://hamel.dev/blog/posts/eval-smell/
+    titre: "\"It's Hard to Eval\" Is a Product Smell"
+    source: Hamel Husain et Chip Huyen
+    date_examen: 2026-10-30
+    raison: Centré sur les produits LLM ; le lien avec les specs relèverait de notre interprétation.
+  - url: https://hamel.dev/blog/posts/evals-skills/
+    titre: Evals Skills for Coding Agents
+    source: Hamel Husain et Chip Huyen
+    date_examen: 2026-10-30
+    raison: Outil pour évaluer des produits LLM, pas des tests de logiciel.
+  - url: https://huyenchip.com/2025/01/16/ai-engineering-pitfalls.html
+    titre: Common pitfalls when building generative AI applications
+    source: Hamel Husain et Chip Huyen
+    date_examen: 2026-10-30
+    raison: Construction d'applications LLM, pas ingénierie logicielle avec agents.
