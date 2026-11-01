@@ -8,19 +8,14 @@
 // Usage: node scripts/check-corpus.mjs
 // Exits with code 1 when an error is found.
 
-import { readdirSync, readFileSync, statSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import {
+  ANY_ENTRY, CHAPTER_FILE, CONTENT_DIR, PRESENTATION, chapterFiles, parseEntry,
+} from './lib/corpus.mjs'
 
-const CONTENT_DIR = 'content'
 const SYNTHESES_DIR = join(CONTENT_DIR, '7.syntheses')
-const PRESENTATION = join(CONTENT_DIR, '1.presentation.md')
-
-// Canonical label: **Central · Site**. Nuxt Studio may rewrite it as
-// **[Central · Site]** or [**Central · Site**]; both are accepted.
-const ENTRY = /^- (?:\*\*\[|\[\*\*|\*\*)(Central|Complémentaire) · ([^\]*]+)(?:\]\*\*|\*\*\]|\*\*) \[[^\]]+\]\((https?:\/\/[^)\s]+)\)/gm
-const ANY_ENTRY = /^- (?:\*\*\[|\[\*\*|\*\*)(?:Central|Complémentaire) · /gm
 const EXTERNAL_LINK = /\]\((https?:\/\/[^)\s]+)\)/g
-const CHAPTER_FILE = /^(\d{2})\.(.+)\.md$/
 
 const errors = []
 
@@ -28,18 +23,12 @@ function listFiles(dir) {
   return readdirSync(dir).map(name => join(dir, name))
 }
 
-function chapterFiles() {
-  return listFiles(CONTENT_DIR)
-    .filter(path => statSync(path).isDirectory() && /\/\d\.partie-/.test(path))
-    .flatMap(listFiles)
-    .filter(path => CHAPTER_FILE.test(path.split('/').pop()))
-}
-
 function parseChapter(path) {
   const [, number, slug] = path.split('/').pop().match(CHAPTER_FILE)
   const text = readFileSync(path, 'utf8')
-  const entries = [...text.matchAll(ENTRY)].map(([, weight, site, url]) => ({ weight, site, url }))
-  const unparsed = (text.match(ANY_ENTRY) ?? []).length - entries.length
+  const lines = text.split('\n')
+  const entries = lines.map(parseEntry).filter(Boolean)
+  const unparsed = lines.filter(line => ANY_ENTRY.test(line)).length - entries.length
   if (unparsed > 0) errors.push(`${path} : ${unparsed} référence(s) au format non reconnu`)
   return { path, number, slug, text, entries }
 }

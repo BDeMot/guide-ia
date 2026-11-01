@@ -1,0 +1,193 @@
+# File de travail de la veille : ce qui a été repéré mais pas encore traité.
+# Tenu par la skill /sources.
+#
+# publications : publications repérées mais pas encore lues, ou à réexaminer.
+#   /veille les traite en priorité, puis les retire de la file (vers le
+#   corpus ou vers veille/ecartees.yml).
+#   Champs : url, titre, source, raison (chapitre visé et intérêt),
+#            ajoute_le (AAAA-MM-JJ), origine.
+#
+# auteurs : auteurs ou équipes proposés comme nouvelles références.
+#   /auteurs les évalue, puis les retire de la file (vers veille/sources.yml
+#   ou vers la section « refuses »).
+#   Champs : nom, pourquoi, chapitres, ajoute_le, origine.
+#
+# refuses : auteurs évalués et non retenus, avec la raison, pour ne pas les
+#   reproposer.
+
+publications:
+  - url: https://simonwillison.net/2025/Oct/7/vibe-engineering/
+    titre: Vibe engineering
+    source: Simon Willison
+    raison: Terme abandonné par l'auteur au profit d'« agentic engineering » ; recoupe le billet retenu au chapitre 1. Utile pour le chapitre 2 ou 4.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://simonwillison.net/2025/Sep/30/designing-agentic-loops/
+    titre: Designing agentic loops
+    source: Simon Willison
+    raison: Credentials limités, plafonds budgétaires, choix des problèmes à confier ; pour le chapitre 9 ou 15.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/
+    titre: Design Patterns for Securing LLM Agents against Prompt Injections
+    source: Simon Willison
+    raison: Six patterns architecturaux contre l'injection de prompt ; pour le chapitre 14, idéalement via l'article d'origine (arXiv 2506.08837).
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/
+    titre: Conceptual integrity and counting lines of code
+    source: Simon Willison
+    raison: Intégrité conceptuelle selon Brooks ; pour le chapitre 11.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/
+    titre: Writing code is cheap now
+    source: Simon Willison
+    raison: ; non daté. Le code est bon marché, le bon code ne l'est pas ; pour le chapitre 2 ou 11.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/
+    titre: Linear walkthroughs
+    source: Simon Willison
+    raison: Technique de compréhension d'un code vibe codé, mais liée à un outil de l'auteur ; pour le chapitre 12.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+    titre: The lethal trifecta for AI agents
+    source: Simon Willison
+    raison: Source d'origine du concept, présent au chapitre 14 via Sietsma ; à ajouter comme source primaire.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+    titre: Measuring AI Ability to Complete Long Software Tasks
+    source: Recherche empirique (DORA, METR, Nicole Forsgren)
+    raison: Non lu. Concept de « time horizon » pour le chapitre 3, à lire avec la note « Clarifying limitations of time horizon ».
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://metr.org/blog/2026-05-11-ai-usage-survey/
+    titre: Measuring the Self-Reported Impact of Early-2026 AI on Technical Worker Productivity
+    source: Recherche empirique (DORA, METR, Nicole Forsgren)
+    raison: Non lu ; candidat pour le chapitre 17.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://leanpub.com/ai-assisted-programming
+    titre: AI Assisted Programming
+    source: Michael Feathers
+    raison: Livre payant, achevé à 30 % (mise à jour du 26 mai 2025) ; seule la table des matières est lisible. À revoir quand il sera terminé.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://www.youtube.com/watch?v=ydAin2IWaQo
+    titre: Agentic AI coding BREAKS Mob Programming (Here's How To Fix It)
+    source: Dave Farley
+    raison: ; lu en partie. Apprentissage des juniors en mob programming, pour le chapitre 5.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2
+    titre: "AI's impact on software engineers in 2026: key trends, Part 2"
+    source: Gergely Orosz (The Pragmatic Engineer)
+    raison: Payant, non lu ; suite de l'article retenu au chapitre 2.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://newsletter.pragmaticengineer.com/p/are-ai-agents-actually-slowing-us
+    titre: Are AI agents actually slowing us down?
+    source: Gergely Orosz (The Pragmatic Engineer)
+    raison: Payant, non lu ; potentiellement utile pour le chapitre 3.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews
+    titre: What is happening with code reviews?
+    source: Gergely Orosz (The Pragmatic Engineer)
+    raison: Payant, non lu ; potentiellement utile pour le chapitre 14.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://itrevolution.com/articles/vibe-coding-the-revolutionary-approach-transforming-software-development/
+    titre: "Vibe Coding: The Revolutionary Approach Transforming Software Development"
+    source: Steve Yegge et Gene Kim
+    raison: Résumé promotionnel du livre écrit par l'éditeur, chiffres non sourcés. Le livre (qui appelle « vibe coding » tout code produit par l'IA, désaccord utile au chapitre 1) n'a pas été lu.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://steve-yegge.medium.com/vibe-maintainer-a2273a841040
+    titre: Vibe Maintainer
+    source: Steve Yegge et Gene Kim
+    raison: Non lu ; candidat pour le chapitre 12 ou 14.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://mitchellh.com/writing/non-trivial-vibing
+    titre: Vibing a Non-Trivial Ghostty Feature
+    source: Mitchell Hashimoto et Armin Ronacher
+    raison: Excellente étude de cas chiffrée (16 sessions, coût, « anti-slop session », revue manuelle) ; pour le chapitre 10 ou 12.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://lucumr.pocoo.org/2025/6/12/agentic-coding/
+    titre: Agentic Coding Recommendations
+    source: Mitchell Hashimoto et Armin Ronacher
+    raison: ; en partie lié à un outil et à un langage. Pour les chapitres 9 et 11.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://lucumr.pocoo.org/2025/9/29/90-percent/
+    titre: 90%
+    source: Mitchell Hashimoto et Armin Ronacher
+    raison: Non lu en détail ; candidat pour le chapitre 3 ou 11.
+    ajoute_le: 2026-10-30
+    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
+  - url: https://arxiv.org/abs/2506.08837
+    titre: Design Patterns for Securing LLM Agents against Prompt Injections
+    source: hors sources suivies
+    raison: Article d'origine des six patterns contre l'injection de prompt, à citer directement au chapitre 14.
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30.md
+auteurs:
+  - nom: Matt Beane
+    pourquoi: Recherche (UC Santa Barbara, « The Skill Code ») sur l'érosion et la transmission des compétences face aux machines intelligentes ; coauteur du rapport DORA 2025.
+    chapitres:
+      - 5
+      - 6
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30.md
+  - nom: Cat Hicks
+    pourquoi: Psychologue de la recherche sur le travail des développeurs.
+    chapitres:
+      - 5
+      - 17
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30-2.md
+  - nom: Emily Bache
+    pourquoi: Coach technique (Samman Coaching) ; rassemble et analyse des harnesses TDD de praticiens.
+    chapitres:
+      - 13
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30-2.md
+  - nom: Chad Fowler
+    pourquoi: À l'origine des idées de « rigor relocation » et de code regénérable (« Phoenix Architectures »).
+    chapitres:
+      - 7
+      - 11
+      - 12
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30-2.md
+  - nom: Johann Rehberger
+    pourquoi: Chercheur en sécurité (blog Embrace The Red) qui documente les attaques par injection de prompt contre les agents de code.
+    chapitres:
+      - 14
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30.md
+  - nom: Thorsten Ball
+    pourquoi: Praticien (newsletter « Register Spill ») qui écrit sur l'agentic coding.
+    chapitres:
+      - 9
+      - 10
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30-4.md
+  - nom: Shreya Shankar
+    pourquoi: Recherche (UC Berkeley) sur la validation des juges LLM et la « criteria drift ».
+    chapitres:
+      - 13
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30-4.md
+  - nom: Laura Tacho et Abi Noda (DX)
+    pourquoi: Mesure de l'impact de l'IA dans de nombreuses entreprises ; intérêt commercial à signaler.
+    chapitres:
+      - 17
+    ajoute_le: 2026-10-30
+    origine: rapport veille/rapports/2026-10-30-3.md
+refuses: []

@@ -1,6 +1,6 @@
 ---
 name: synthese
-description: Rédige ou met à jour la synthèse d'un chapitre du guide IA agentique dans content/7.syntheses/ (points d'accord, points de désaccord, état des preuves, angles morts), à partir des seules références du chapitre. À utiliser quand Benjamin demande une synthèse, lance /synthese avec un numéro de chapitre ou « tous », ou quand la skill veille a ajouté des références à un chapitre.
+description: Rédige ou met à jour la synthèse d'un chapitre du guide IA agentique dans content/7.syntheses/ (points d'accord, points de désaccord, état des preuves, angles morts), à partir des seules références du chapitre. À utiliser quand Benjamin demande une synthèse, lance /synthese avec un numéro de chapitre ou « tous », ou quand la skill mise-a-jour a ajouté des références à un chapitre.
 ---
 
 # Synthèse d'un chapitre
@@ -8,6 +8,14 @@ description: Rédige ou met à jour la synthèse d'un chapitre du guide IA agent
 Argument : un numéro de chapitre (`13`), plusieurs (`7 8`) ou `tous`.
 
 Une synthèse prépare l'analyse de couverture (étape B) et la construction pédagogique (étape C) de `CLAUDE.md`. Ce n'est pas la rédaction du livre (étape D) : elle confronte les positions des auteurs, elle n'enseigne pas le sujet.
+
+## Mise à jour partielle ou réécriture
+
+Quand la synthèse existe déjà et que le chapitre a reçu peu de références (trois au plus), la mettre à jour plutôt que la réécrire : relire la synthèse entière, intégrer chaque nouvelle référence là où elle change quelque chose (un accord renforcé, une nouvelle position dans un désaccord, une nouvelle observation dans l'état des preuves, un angle mort comblé), puis mettre à jour `references`, `auteurs`, la date et le bandeau.
+
+La réécrire entièrement si le chapitre a reçu plus de trois références, si un nouveau désaccord apparaît qui réorganise les sections, ou si Benjamin le demande.
+
+Dans les deux cas, toutes les règles ci-dessous s'appliquent.
 
 ## Matériau autorisé
 
@@ -82,7 +90,7 @@ Ne pas fabriquer de désaccord. Des auteurs qui traitent des sujets différents 
 - Si le chapitre compte moins de 3 auteurs distincts, ne pas rédiger d'accords ni de désaccords. Écrire sous le bandeau : « Corpus insuffisant pour une synthèse : N auteur(s) distinct(s). » Remplir seulement **Question du chapitre** et **Angles morts**, en listant ce qu'il faudrait chercher.
 - Rester neutre : présenter les positions sans trancher. Ne pas présenter la thèse du livre comme acquise.
 - Rédiger en français, garder les termes techniques en anglais, paraphraser.
-- Toute régénération remet `statut: non relue` et le bandeau « **Non relue.** », même si la version précédente était relue.
+- Toute modification, partielle ou complète, remet `statut: non relue` et le bandeau « **Non relue.** », même si la version précédente était relue.
 - Quand Benjamin a relu une synthèse, il passe `statut: relue` et remplace « **Non relue.** » par « Relue par Benjamin le … ». Ne pas le faire à sa place.
 
 ## Lien depuis le chapitre
@@ -101,4 +109,4 @@ L'ajouter si elle manque. Ne pas la dupliquer.
 
 Lancer `npm run check`. Toute URL citée hors du chapitre est une erreur à corriger.
 
-Quand la skill est appelée seule, et non par la skill `veille`, commiter sur `main` avec le message `docs(syntheses): chapitre(s) N…`.
+Quand la skill est appelée seule, et non par la skill `mise-a-jour`, commiter sur `main` avec le message `docs(syntheses): chapitre(s) N…`.

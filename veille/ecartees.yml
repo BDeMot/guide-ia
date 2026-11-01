@@ -1,5 +1,6 @@
 # Publications examinées par la veille et non retenues.
-# Évite de les réexaminer à chaque passage.
+# Évite de les réexaminer à chaque passage. Les publications utiles mais
+# écartées faute de place vont dans veille/a-consulter.yml, pas ici.
 #
 # Format :
 #   - url: URL de la publication
@@ -7,80 +8,23 @@
 #     source: nom de la source (veille/sources.yml)
 #     date_examen: AAAA-MM-JJ
 #     raison: pourquoi elle n'a pas été retenue
-#     reconsiderer: true   (facultatif) publication utile, écartée seulement
-#                          à cause du plafond : à réexaminer au prochain passage
 
 ecartees:
-  # Passage 1 — 2026-10-30
-  - url: https://simonwillison.net/2025/Oct/7/vibe-engineering/
-    titre: Vibe engineering
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Terme abandonné par l'auteur au profit d'« agentic engineering » ; recoupe le billet retenu au chapitre 1. Utile pour le chapitre 2 ou 4.
-    reconsiderer: true
   - url: https://simonwillison.net/2025/Dec/18/code-proven-to-work/
     titre: Your job is to deliver code you have proven to work
     source: Simon Willison
     date_examen: 2026-10-30
     raison: Redite de « AI writes code faster. Your job is still to prove it works. » (Osmani, chapitre 14).
-  - url: https://simonwillison.net/2025/Sep/30/designing-agentic-loops/
-    titre: Designing agentic loops
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Plafond atteint. Credentials limités, plafonds budgétaires, choix des problèmes à confier ; pour le chapitre 9 ou 15.
-    reconsiderer: true
-  - url: https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/
-    titre: Design Patterns for Securing LLM Agents against Prompt Injections
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Plafond atteint. Six patterns architecturaux contre l'injection de prompt ; pour le chapitre 14, idéalement via l'article d'origine (arXiv 2506.08837).
-    reconsiderer: true
-  - url: https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/
-    titre: Conceptual integrity and counting lines of code
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Plafond atteint. Intégrité conceptuelle selon Brooks ; pour le chapitre 11.
-    reconsiderer: true
-  - url: https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/
-    titre: Writing code is cheap now
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Plafond atteint ; non daté. Le code est bon marché, le bon code ne l'est pas ; pour le chapitre 2 ou 11.
-    reconsiderer: true
   - url: https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/
     titre: Red/green TDD
     source: Simon Willison
     date_examen: 2026-10-30
     raison: Redite de la position de Kent Beck (chapitre 13), sans donnée ni expérience.
-  - url: https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/
-    titre: Linear walkthroughs
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Technique de compréhension d'un code vibe codé, mais liée à un outil de l'auteur ; pour le chapitre 12.
-    reconsiderer: true
   - url: https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/
     titre: Writing about Agentic Engineering Patterns
     source: Simon Willison
     date_examen: 2026-10-30
     raison: Annonce du guide, sans contenu propre.
-  - url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
-    titre: The lethal trifecta for AI agents
-    source: Simon Willison
-    date_examen: 2026-10-30
-    raison: Source d'origine du concept, présent au chapitre 14 via Sietsma ; à ajouter comme source primaire.
-    reconsiderer: true
-  - url: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
-    titre: Measuring AI Ability to Complete Long Software Tasks
-    source: Recherche empirique (DORA, METR, Nicole Forsgren)
-    date_examen: 2026-10-30
-    raison: Plafond atteint, non lu. Concept de « time horizon » pour le chapitre 3, à lire avec la note « Clarifying limitations of time horizon ».
-    reconsiderer: true
-  - url: https://metr.org/blog/2026-05-11-ai-usage-survey/
-    titre: Measuring the Self-Reported Impact of Early-2026 AI on Technical Worker Productivity
-    source: Recherche empirique (DORA, METR, Nicole Forsgren)
-    date_examen: 2026-10-30
-    raison: Plafond atteint, non lu ; candidat pour le chapitre 17.
-    reconsiderer: true
   - url: https://karpathy.bearblog.dev/year-in-review-2025/
     titre: 2025 LLM Year in Review
     source: Andrej Karpathy
@@ -91,13 +35,6 @@ ecartees:
     source: Andrej Karpathy
     date_examen: 2026-10-30
     raison: Inaccessible (X) ; la distinction est couverte par la transcription Sequoia.
-  # Passage 2 — 2026-10-30
-  - url: https://leanpub.com/ai-assisted-programming
-    titre: AI Assisted Programming
-    source: Michael Feathers
-    date_examen: 2026-10-30
-    raison: Livre payant, achevé à 30 % (mise à jour du 26 mai 2025) ; seule la table des matières est lisible. À revoir quand il sera terminé.
-    reconsiderer: true
   - url: https://techleadjournal.dev/episodes/195/
     titre: "#195 - Working Effectively with Legacy Code and AI Coding Assistant"
     source: Michael Feathers
@@ -113,12 +50,6 @@ ecartees:
     source: Dave Farley
     date_examen: 2026-10-30
     raison: Pas de contenu sur l'IA ; redite pour le chapitre 12.
-  - url: https://www.youtube.com/watch?v=ydAin2IWaQo
-    titre: Agentic AI coding BREAKS Mob Programming (Here's How To Fix It)
-    source: Dave Farley
-    date_examen: 2026-10-30
-    raison: Plafond atteint ; lu en partie. Apprentissage des juniors en mob programming, pour le chapitre 5.
-    reconsiderer: true
   - url: https://www.youtube.com/watch?v=qzm5sSnGm2Q
     titre: This Software Design Mindset Almost Feels Like Cheating
     source: Dave Farley
@@ -144,7 +75,6 @@ ecartees:
     source: Charity Majors
     date_examen: 2026-10-30
     raison: Éthique, hors périmètre.
-  # Passage 3 — 2026-10-30
   - url: https://newsletter.pragmaticengineer.com/p/software-engineering-with-llms-in-2025
     titre: "Software engineering with LLMs in 2025: reality check"
     source: Gergely Orosz (The Pragmatic Engineer)
@@ -155,24 +85,6 @@ ecartees:
     source: Gergely Orosz (The Pragmatic Engineer)
     date_examen: 2026-10-30
     raison: Surtout un classement d'outils et de modèles, périssable.
-  - url: https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2
-    titre: "AI's impact on software engineers in 2026: key trends, Part 2"
-    source: Gergely Orosz (The Pragmatic Engineer)
-    date_examen: 2026-10-30
-    raison: Payant, non lu ; suite de l'article retenu au chapitre 2.
-    reconsiderer: true
-  - url: https://newsletter.pragmaticengineer.com/p/are-ai-agents-actually-slowing-us
-    titre: Are AI agents actually slowing us down?
-    source: Gergely Orosz (The Pragmatic Engineer)
-    date_examen: 2026-10-30
-    raison: Payant, non lu ; potentiellement utile pour le chapitre 3.
-    reconsiderer: true
-  - url: https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews
-    titre: What is happening with code reviews?
-    source: Gergely Orosz (The Pragmatic Engineer)
-    date_examen: 2026-10-30
-    raison: Payant, non lu ; potentiellement utile pour le chapitre 14.
-    reconsiderer: true
   - url: https://codescene.com/blog/making-legacy-code-ai-ready-benchmarks-on-agentic-refactoring
     titre: "Making Legacy Code AI-Ready: Benchmarks on Agentic Refactoring"
     source: Adam Tornhill (CodeScene)
@@ -183,31 +95,6 @@ ecartees:
     source: Adam Tornhill (CodeScene)
     date_examen: 2026-10-30
     raison: Patterns intégrés aux produits CodeScene ; preuves internes non vérifiables.
-  - url: https://itrevolution.com/articles/vibe-coding-the-revolutionary-approach-transforming-software-development/
-    titre: "Vibe Coding: The Revolutionary Approach Transforming Software Development"
-    source: Steve Yegge et Gene Kim
-    date_examen: 2026-10-30
-    raison: Résumé promotionnel du livre écrit par l'éditeur, chiffres non sourcés. Le livre (qui appelle « vibe coding » tout code produit par l'IA, désaccord utile au chapitre 1) n'a pas été lu.
-    reconsiderer: true
-  - url: https://steve-yegge.medium.com/vibe-maintainer-a2273a841040
-    titre: Vibe Maintainer
-    source: Steve Yegge et Gene Kim
-    date_examen: 2026-10-30
-    raison: Plafond atteint, non lu ; candidat pour le chapitre 12 ou 14.
-    reconsiderer: true
-  # Passage 4 — 2026-10-30
-  - url: https://mitchellh.com/writing/non-trivial-vibing
-    titre: Vibing a Non-Trivial Ghostty Feature
-    source: Mitchell Hashimoto et Armin Ronacher
-    date_examen: 2026-10-30
-    raison: Plafond atteint. Excellente étude de cas chiffrée (16 sessions, coût, « anti-slop session », revue manuelle) ; pour le chapitre 10 ou 12.
-    reconsiderer: true
-  - url: https://lucumr.pocoo.org/2025/6/12/agentic-coding/
-    titre: Agentic Coding Recommendations
-    source: Mitchell Hashimoto et Armin Ronacher
-    date_examen: 2026-10-30
-    raison: Plafond atteint ; en partie lié à un outil et à un langage. Pour les chapitres 9 et 11.
-    reconsiderer: true
   - url: https://lucumr.pocoo.org/2025/7/30/things-that-didnt-work/
     titre: Agentic Coding Things That Didn't Work
     source: Mitchell Hashimoto et Armin Ronacher
@@ -233,12 +120,6 @@ ecartees:
     source: Mitchell Hashimoto et Armin Ronacher
     date_examen: 2026-10-30
     raison: Bug précis d'un modèle donné, trop périssable.
-  - url: https://lucumr.pocoo.org/2025/9/29/90-percent/
-    titre: 90%
-    source: Mitchell Hashimoto et Armin Ronacher
-    date_examen: 2026-10-30
-    raison: Plafond atteint, non lu en détail ; candidat pour le chapitre 3 ou 11.
-    reconsiderer: true
   - url: https://hamel.dev/blog/posts/eval-smell/
     titre: "\"It's Hard to Eval\" Is a Product Smell"
     source: Hamel Husain et Chip Huyen
@@ -254,7 +135,6 @@ ecartees:
     source: Hamel Husain et Chip Huyen
     date_examen: 2026-10-30
     raison: Construction d'applications LLM, pas ingénierie logicielle avec agents.
-  # Passage 5 — 2026-10-30 (craftsmanship et agents)
   - url: https://dev.to/sdiamante13/the-most-underrated-skill-in-the-ai-coding-era-f6
     titre: The Most Underrated Skill in the AI Coding Era
     source: hors sources suivies

@@ -6,12 +6,17 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "preview": "nuxt preview",
-    "check": "node scripts/check-corpus.mjs"
+    "check": "node scripts/check-corpus.mjs",
+    "feeds": "node scripts/feeds.mjs",
+    "entries": "node scripts/add-entries.mjs"
   },
   "dependencies": {
     "better-sqlite3": "^12.11.1",
     "docus": "^5.15.0",
     "nuxt": "^4.5.2",
     "nuxt-studio": "^1.8.0"
+  },
+  "devDependencies": {
+    "yaml": "^2.9.1"
   }
 }

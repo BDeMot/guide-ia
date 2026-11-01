@@ -1,4 +1,6 @@
-# Sources suivies par la veille (/veille).
+# Sources suivies par la veille : où chercher les publications des auteurs de
+# référence. Tenu par la skill /sources, lu par /veille et par
+# `npm run feeds -- check | list`.
 #
 # Cette liste sert uniquement à la veille : le corpus reste organisé par
 # chapitre (CLAUDE.md §5), jamais par auteur.
@@ -6,13 +8,14 @@
 # Champs :
 #   nom              auteur(s) ou institution
 #   site             page d'accueil
-#   flux             URL RSS/Atom vérifiée, ou « manuel » si aucun flux exploitable
+#   flux             URL RSS/Atom vérifiée, liste d'URL si plusieurs,
+#                    ou « manuel » si aucun flux exploitable
 #   archive          page à consulter quand le flux est absent ou incomplet
 #   chapitres        chapitres auxquels la source contribue surtout
 #   derniere_veille  date du dernier passage (AAAA-MM-JJ), null si jamais examinée
-#   notes            consignes de filtrage propres à la source
+#   notes            consignes de filtrage propres à la source (entre guillemets)
 #
-# Flux vérifiés le 2026-10-30.
+# Flux vérifiés le 2026-11-01 avec `npm run feeds -- check`.
 
 sources:
   # --- Sources du corpus initial ---------------------------------------------
@@ -22,14 +25,14 @@ sources:
     flux: https://addyosmani.com/rss.xml
     chapitres: [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
     derniere_veille: 2026-10-30
-    notes: Socle initial du corpus. Le blog mêle articles de fond et billets plus légers ; ne garder que les premiers.
+    notes: "Socle initial du corpus. Le blog mêle articles de fond et billets plus légers ; ne garder que les premiers."
 
   - nom: claude.dev (Anthropic)
     site: https://claude.dev/
     flux: https://claude.dev/rss.xml
     chapitres: [7, 8, 9, 10, 13, 14, 15, 16]
     derniere_veille: 2026-10-30
-    notes: Retours d'expérience d'Anthropic. Toujours signaler la limite « exemple produit » et la transférabilité à évaluer.
+    notes: "Retours d'expérience d'Anthropic. Toujours signaler la limite « exemple produit » et la transférabilité à évaluer."
 
   - nom: Martin Fowler et Thoughtworks (martinfowler.com)
     site: https://martinfowler.com/
@@ -37,21 +40,21 @@ sources:
     archive: https://martinfowler.com/articles/exploring-gen-ai.html
     chapitres: [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14]
     derniere_veille: 2026-10-30
-    notes: La plupart des articles ne sont pas de Fowler ; attribuer au vrai auteur. Les « Fragments » sont des notes courtes, à n'ajouter que s'ils portent une idée nouvelle.
+    notes: "La plupart des articles ne sont pas de Fowler ; attribuer au vrai auteur. Les « Fragments » sont des notes courtes, à n'ajouter que s'ils portent une idée nouvelle. Les rapports de Thoughtworks (thoughtworks.com) sont à consulter manuellement."
 
   - nom: Kent Beck
     site: https://newsletter.kentbeck.com/
     flux: https://newsletter.kentbeck.com/feed
     chapitres: [4, 5, 13, 14]
     derniere_veille: 2026-10-30
-    notes: Beaucoup de billets sont en partie payants ; marquer « À vérifier » si seule l'introduction est lisible.
+    notes: "Beaucoup de billets sont en partie payants ; marquer « À vérifier » si seule l'introduction est lisible."
 
   - nom: John Ousterhout
     site: https://web.stanford.edu/~ouster/cgi-bin/home.php
     flux: manuel
     chapitres: [4, 11]
     derniere_veille: 2026-10-30
-    notes: Pas de blog. Chercher interviews, conférences et éditions de « A Philosophy of Software Design ».
+    notes: "Pas de blog. Chercher interviews, conférences et éditions de « A Philosophy of Software Design »."
 
   - nom: Robert C. Martin (Uncle Bob)
     site: https://x.com/unclebobmartin
@@ -59,16 +62,17 @@ sources:
     archive: https://blog.cleancoder.com/
     chapitres: [4, 13, 14, 16]
     derniere_veille: 2026-10-30
-    notes: Blog inactif depuis 2023 ; positions publiées surtout sur X, illisible sans compte. Préférer les sources qui citent le texte original.
+    notes: "Blog inactif depuis 2023 ; positions publiées surtout sur X, illisible sans compte. Préférer les sources qui citent le texte original."
 
   # --- Sources ajoutées en v1.4 ------------------------------------------------
 
   - nom: Simon Willison
     site: https://simonwillison.net/
     flux: https://simonwillison.net/atom/entries/
+    archive: https://simonwillison.net/tags/coding-agents/
     chapitres: [3, 8, 9, 10, 14]
     derniere_veille: 2026-10-30
-    notes: Très prolifique. Le flux « entries » ne remonte que quelques semaines ; pour le passé, utiliser les pages de tags (coding-agents, ai-assisted-programming, prompt-injection). Il exclut les liens et citations courtes ; ne garder que les articles de fond (patterns, sécurité, injection de prompt).
+    notes: "Très prolifique. Le flux « entries » ne remonte que quelques semaines et exclut les liens et citations courtes ; pour le passé, utiliser les pages de tags coding-agents, ai-assisted-programming et prompt-injection. Ne garder que les articles de fond (patterns, sécurité, injection de prompt)."
 
   - nom: Recherche empirique (DORA, METR, Nicole Forsgren)
     site: https://dora.dev/research/
@@ -76,49 +80,50 @@ sources:
     archive: https://dora.dev/research/
     chapitres: [2, 3, 5, 17]
     derniere_veille: 2026-10-30
-    notes: Le flux couvre METR ; DORA et Forsgren sont à consulter manuellement (rapports annuels, livre « Frictionless »). Priorité aux études mesurées ; signaler méthode, échantillon et limites.
+    notes: "Le flux couvre METR ; DORA et Forsgren sont à consulter manuellement (rapports annuels, livre « Frictionless »). Priorité aux études mesurées ; signaler méthode, échantillon et limites. La plupart des publications de METR portent sur la sûreté de l'IA, hors sujet."
 
   - nom: Michael Feathers
     site: https://michaelfeathers.substack.com/
     flux: https://michaelfeathers.substack.com/feed
     chapitres: [12, 13]
     derniere_veille: 2026-10-30
-    notes: Publie rarement (dernier billet en juin 2025). Chercher aussi interviews et le livre « AI Assisted Programming » (Leanpub).
+    notes: "Publie rarement (dernier billet en juin 2025). Chercher aussi interviews et le livre « AI Assisted Programming » (Leanpub)."
 
   - nom: Grady Booch
     site: https://x.com/Grady_Booch
     flux: manuel
     chapitres: [11, 14, 17]
     derniere_veille: 2026-10-30
-    notes: Pas de blog ; positions exprimées en podcasts et conférences (ex. The Pragmatic Engineer, février 2026).
+    notes: "Pas de blog ; positions exprimées en podcasts et conférences. Chercher des transcriptions publiées."
 
   - nom: Dave Farley
     site: https://www.youtube.com/@ModernSoftwareEngineeringYT
     flux: https://www.youtube.com/feeds/videos.xml?channel_id=UCCfqyGl3nq_V0bo64CjZh8g
     chapitres: [4, 7, 13, 14]
     derniere_veille: 2026-10-30
-    notes: La chaîne accueille aussi d'autres auteurs (Emily Bache) ; indiquer le vrai auteur. Surtout des vidéos ; une vidéo n'est retenue que si une transcription ou un résumé fiable permet d'en vérifier le contenu. Son blog (davefarley.net) est inactif depuis 2022.
+    notes: "La chaîne accueille aussi d'autres auteurs (Emily Bache) ; indiquer le vrai auteur. Une vidéo n'est retenue que si une transcription permet d'en vérifier le contenu. Son blog (davefarley.net) est inactif depuis 2022."
 
   - nom: Charity Majors
     site: https://charity.wtf/
     flux: https://charity.wtf/feed/
+    archive: https://www.honeycomb.io/blog
     chapitres: [5, 14, 17]
     derniere_veille: 2026-10-30
-    notes: Observabilité, production, carrières et juniors. Publie aussi sur le blog de Honeycomb (https://www.honeycomb.io/blog), à consulter manuellement.
+    notes: "Observabilité, production, carrières et juniors. Publie aussi sur le blog de Honeycomb, à consulter manuellement."
 
   - nom: Gergely Orosz (The Pragmatic Engineer)
     site: https://newsletter.pragmaticengineer.com/
     flux: https://newsletter.pragmaticengineer.com/feed
     chapitres: [2, 10, 17]
     derniere_veille: 2026-10-30
-    notes: Beaucoup de contenus payants ou d'actualité. Retenir les enquêtes de terrain et les interviews d'auteurs de référence ; préciser qui parle (Orosz ou l'invité).
+    notes: "Beaucoup de contenus payants ou d'actualité. Retenir les enquêtes de terrain et les interviews d'auteurs de référence ; préciser qui parle (Orosz ou l'invité)."
 
   - nom: Adam Tornhill (CodeScene)
     site: https://codescene.com/blog
     flux: https://codescene.com/blog/rss.xml
     chapitres: [11, 12]
     derniere_veille: 2026-10-30
-    notes: Blog d'entreprise : ne retenir que les articles signés Tornhill ou Markus Borg (chercheur associé à l'Université de Lund) ou fondés sur des données publiées ; signaler l'intérêt commercial.
+    notes: "Blog d'entreprise. Ne retenir que les articles signés Tornhill ou Markus Borg (chercheur associé à l'Université de Lund), ou fondés sur des données publiées ; signaler l'intérêt commercial."
 
   - nom: Steve Yegge et Gene Kim
     site: https://steve-yegge.medium.com/
@@ -126,34 +131,38 @@ sources:
     archive: https://itrevolution.com/
     chapitres: [1, 10, 16, 17]
     derniere_veille: 2026-10-30
-    notes: Positions très favorables aux agents, utiles comme contrepoint. Medium refuse la lecture automatique (403) ; lire le texte complet dans le flux RSS. Le flux d'IT Revolution (https://itrevolution.com/feed/) est un flux d'éditeur, très bruité ; le consulter manuellement pour Gene Kim.
+    notes: "Positions très favorables aux agents, utiles comme contrepoint. Medium refuse la lecture automatique (403) ; lire le texte complet dans le flux RSS. Le flux d'IT Revolution est très bruité ; consulter le site manuellement pour Gene Kim."
 
   - nom: Mitchell Hashimoto et Armin Ronacher
     site: https://lucumr.pocoo.org/
-    flux: https://lucumr.pocoo.org/feed.atom
-    archive: https://mitchellh.com/writing
+    flux:
+      - https://lucumr.pocoo.org/feed.atom
+      - https://mitchellh.com/feed.xml
     chapitres: [9, 10, 12]
     derniere_veille: 2026-10-30
-    notes: Second flux, pour Hashimoto, https://mitchellh.com/feed.xml. Retours détaillés de praticiens seniors.
+    notes: "Retours détaillés de praticiens seniors. Beaucoup de billets hors sujet (Zig, Ghostty, Rust, politique)."
 
   - nom: Hamel Husain et Chip Huyen
     site: https://hamel.dev/
-    flux: https://hamel.dev/index.xml
-    archive: https://huyenchip.com/blog/
+    flux:
+      - https://hamel.dev/index.xml
+      - https://huyenchip.com/feed.xml
     chapitres: [3, 13]
     derniere_veille: 2026-10-30
-    notes: Second flux, pour Chip Huyen, https://huyenchip.com/feed.xml (peu actif depuis janvier 2025). Évaluations et AI engineering ; distinguer évaluation de modèles et tests de logiciel.
+    notes: "Évaluations et AI engineering ; distinguer évaluation de modèles et tests de logiciel. Chip Huyen publie peu depuis janvier 2025."
 
   - nom: Andrej Karpathy
     site: https://karpathy.bearblog.dev/
     flux: https://karpathy.bearblog.dev/feed/?type=rss
     chapitres: [1, 3, 17]
     derniere_veille: 2026-10-30
-    notes: Le flux répond 404 sans User-Agent de navigateur. A popularisé le terme « vibe coding ». Beaucoup de billets portent sur la recherche en IA ; ne garder que ceux qui concernent le développement logiciel.
+    notes: "A popularisé le terme « vibe coding ». Beaucoup de billets portent sur la recherche en IA ; ne garder que ceux qui concernent le développement logiciel."
+
+  # --- Sources ajoutées en v1.5 ------------------------------------------------
 
   - nom: Jason Gorman (Codemanship)
     site: https://codemanship.wordpress.com/
     flux: https://codemanship.wordpress.com/feed/
     chapitres: [4, 10, 11, 13]
-    derniere_veille: 2026-10-30
-    notes: Défenseur du software craftsmanship (TDD, refactoring, intégration continue) appliqué aux agents. Seule l'interview SE Radio 732 a été examinée ; le blog reste à parcourir depuis janvier 2025.
+    derniere_veille: null
+    notes: "Défenseur du software craftsmanship (TDD, refactoring, intégration continue) appliqué aux agents. Seule l'interview SE Radio 732 a été examinée ; le blog reste à parcourir depuis janvier 2025."

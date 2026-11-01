@@ -223,16 +223,28 @@ Un ouvrage qui enseigne non seulement **comment travailler avec des agents IA**,
 Le livre doit aider son lecteur à devenir un meilleur ingénieur grâce à l'IA, et non simplement un utilisateur plus habile d'outils de génération de code.
 ## 10. Veille et synthèses
 
-Le corpus est enrichi par un agent IA, lancé à la demande pour l'instant. Deux skills décrivent son travail ; leurs règles font foi :
+Le corpus est enrichi par un agent IA, lancé à la demande pour l'instant. Cinq skills décrivent son travail ; leurs règles font foi :
 
-- `/veille` (`.claude/skills/veille/SKILL.md`) examine les nouvelles publications des sources de `veille/sources.yml`, ajoute sous leur chapitre principal celles qui éclairent la thèse du livre, et commite directement sur `main`.
-- `/synthese <n°|tous>` (`.claude/skills/synthese/SKILL.md`) rédige, pour un chapitre, une synthèse des positions des auteurs : points d'accord, points de désaccord, état des preuves, angles morts.
+- `/auteurs` (`.claude/skills/auteurs/SKILL.md`) repère les chapitres où les voix manquent, propose de nouveaux auteurs de référence, vérifie leur légitimité et inscrit ceux que Benjamin accepte.
+- `/sources` (`.claude/skills/sources/SKILL.md`) tient les registres : où chercher pour chaque auteur suivi, et les publications à consulter plus tard.
+- `/veille` (`.claude/skills/veille/SKILL.md`) trouve les nouvelles publications des auteurs suivis, les lit à la source, rédige les entrées proposées et un rapport, puis enchaîne sur `/mise-a-jour`. Elle ne modifie pas `content/`.
+- `/mise-a-jour` (`.claude/skills/mise-a-jour/SKILL.md`) intègre les propositions au guide, met à jour la présentation, les lacunes et les synthèses des chapitres touchés, contrôle et commite directement sur `main`. Elle sert aussi quand Benjamin demande d'ajouter des références précises.
+- `/synthese <n°|tous>` (`.claude/skills/synthese/SKILL.md`) rédige ou met à jour, pour un chapitre, une synthèse des positions des auteurs : points d'accord, points de désaccord, état des preuves, angles morts.
 
 Fichiers de veille :
 
-- `veille/sources.yml` : sources suivies, flux et date de dernière veille. C'est une liste de veille, pas une organisation du corpus : la règle « pas de section par auteur » (§5) reste valable.
+- `veille/sources.yml` : où chercher (auteurs suivis, flux vérifiés, archives, date de dernière veille). C'est une liste de veille, pas une organisation du corpus : la règle « pas de section par auteur » (§5) reste valable.
+- `veille/a-consulter.yml` : file de travail (publications repérées mais pas encore lues, auteurs proposés à évaluer, auteurs refusés).
 - `veille/ecartees.yml` : publications examinées et non retenues, avec la raison.
+- `veille/propositions/` : un fichier d'entrées proposées par passage de veille, intégré par `/mise-a-jour`.
 - `veille/rapports/` : un rapport par passage (ajouts, rejets, points à vérifier).
+
+Scripts (à lancer depuis la racine du dépôt) :
+
+- `npm run check` : cohérence du corpus (doublons, total annoncé, synthèses et leurs citations). Doit réussir avant chaque commit.
+- `npm run feeds -- check [nom]` : vérifie que les flux répondent.
+- `npm run feeds -- list [nom] [--since AAAA-MM-JJ]` : liste les publications nouvelles des sources, sans celles déjà traitées.
+- `npm run entries -- <propositions.md> [--dry-run]` : insère les entrées proposées sous leur chapitre et met à jour le total.
 
 Règles communes :
 
@@ -240,4 +252,4 @@ Règles communes :
 - Format d'une entrée : `- **Central|Complémentaire · Site** [Titre exact](URL) — Auteur, date. …`, sans crochets autour de l'étiquette (Nuxt Studio et Nuxt Content les réécrivent).
 - Une synthèse ne cite que les références de son chapitre. Elle est marquée « Rédigée par un agent IA » et porte un `statut` (`non relue` ou `relue`). Seul Benjamin passe une synthèse en `relue`.
 - Une synthèse n'est pas une rédaction du livre (étape D) : elle prépare les étapes B et C.
-- `npm run check` doit réussir avant chaque commit.
+- Les registres YAML de `veille/` doivent rester valides : les scripts les lisent.

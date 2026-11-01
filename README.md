@@ -10,12 +10,24 @@ Le corpus est dans `content/` : une page de présentation, un dossier par partie
 
 ## Veille et synthèses
 
-Le corpus est enrichi par un agent IA, avec deux commandes Claude Code :
+Le corpus est enrichi par un agent IA, avec cinq commandes Claude Code :
 
-- `/veille` : ajoute les nouvelles publications des sources de `veille/sources.yml` et écrit un rapport dans `veille/rapports/`.
-- `/synthese 13` ou `/synthese tous` : rédige la synthèse des positions des auteurs d'un chapitre, dans `content/7.syntheses/`.
+| Commande | Rôle |
+|---|---|
+| `/auteurs [nom ou chapitre]` | Proposer et évaluer de nouveaux auteurs de référence. |
+| `/sources` | Enregistrer où chercher (flux, archives), noter une publication à lire plus tard, vérifier les flux. |
+| `/veille [source]` | Trouver les nouvelles publications des auteurs suivis et rédiger les entrées proposées. Enchaîne sur `/mise-a-jour`. |
+| `/mise-a-jour [propositions]` | Intégrer les références au guide, mettre à jour les synthèses, contrôler et commiter. |
+| `/synthese 13` ou `/synthese tous` | Rédiger ou mettre à jour la synthèse des positions des auteurs d'un chapitre. |
 
-`npm run check` contrôle la cohérence du corpus : URL en double, total annoncé, citations des synthèses.
+Les registres de veille sont dans `veille/` : `sources.yml` (où chercher), `a-consulter.yml` (file de travail), `ecartees.yml` (rejets), `propositions/` et `rapports/`.
+
+Scripts :
+
+- `npm run check` : cohérence du corpus (URL en double, total annoncé, citations des synthèses).
+- `npm run feeds -- check` : état des flux suivis.
+- `npm run feeds -- list [nom]` : publications nouvelles depuis la dernière veille.
+- `npm run entries -- <fichier> [--dry-run]` : insertion des entrées proposées.
 
 ## Lancer le site en local
 
