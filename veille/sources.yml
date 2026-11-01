@@ -166,3 +166,57 @@ sources:
     chapitres: [4, 10, 11, 13]
     derniere_veille: 2026-11-01
     notes: "Défenseur du software craftsmanship (TDD, refactoring, intégration continue) appliqué aux agents. Blog très prolifique (environ 180 billets depuis 2025, dont beaucoup d'annonces de formation). La série « The AI-Ready Software Developer » reste en grande partie à lire (voir a-consulter.yml)."
+
+  # --- Sources ajoutées le 2026-11-01 par /auteurs -----------------------------
+
+  - nom: Cat Hicks
+    site: https://www.fightforthehuman.com/
+    flux:
+      - https://www.fightforthehuman.com/feed
+      - https://www.drcathicks.com/blog-feed.xml
+    archive: https://www.drcathicks.com/
+    chapitres: [5, 6, 12, 17]
+    derniere_veille: null
+    notes: "Psychologue, recherche publiée sur le travail des développeurs (Developer Success Lab, Empirical Software Engineering). Nuance la thèse : le risque vient des workflows et de l'organisation plus que de l'individu. Une partie de la newsletter est payante ; marquer « À vérifier » si seule l'introduction est lisible. Distinguer ses synthèses d'études et ses propres mesures."
+
+  - nom: Margaret-Anne Storey (University of Victoria)
+    site: https://margaretstorey.com/
+    flux:
+      - https://margaretstorey.com/feed.xml
+      - "http://export.arxiv.org/api/query?search_query=au:%22Margaret-Anne%20Storey%22&sortBy=submittedDate&sortOrder=descending&max_results=20"
+    chapitres: [5, 6, 11, 12]
+    derniere_veille: null
+    notes: "Recherche relue par des pairs sur la compréhension du code et l'expérience des développeurs ; origine de la « cognitive debt ». Le second flux interroge arXiv : beaucoup de coauteurs et de sujets, ne garder que ce qui touche l'IA, la compréhension ou l'apprentissage. Signaler la taille des échantillons (souvent qualitatifs et petits)."
+
+  - nom: Florian Tramèr (ETH Zurich, SPY Lab)
+    site: https://floriantramer.com/
+    flux:
+      - https://spylab.ai/blog/index.xml
+      - "http://export.arxiv.org/api/query?search_query=au:%22Florian%20Tram%C3%A8r%22&sortBy=submittedDate&sortOrder=descending&max_results=20"
+    archive: https://floriantramer.com/publications/
+    chapitres: [9, 14, 15]
+    derniere_veille: null
+    notes: "Sécurité des LLM et des agents (injection de prompt, défenses par conception), publications à comité de lecture. Le blog du SPY Lab traite aussi de sujets hors périmètre (forecasting, relecture d'articles scientifiques) : filtrer. Lire au moins l'abstract et la section résultats des articles arXiv."
+
+  - nom: Chad Fowler (The Phoenix Architecture)
+    site: https://chadfowler.com/
+    flux: https://aicoding.leaflet.pub/rss
+    archive: https://chadfowler.com/regenerative-software/
+    chapitres: [7, 11, 12, 13]
+    derniere_veille: null
+    notes: "Série d'essais sur le code régénérable et le déplacement de la rigueur. Seule voix du corpus en faveur de la régénération plutôt que de la migration progressive. Essais argumentés sans données ; signaler son intérêt d'investisseur dans l'infrastructure IA (BlueYard Capital)."
+
+  - nom: Matt Beane (UC Santa Barbara)
+    site: https://www.mattbeane.com/
+    flux: https://www.wildworldofwork.org/feed
+    chapitres: [5, 6, 17]
+    derniere_veille: null
+    notes: "Recherche de terrain sur la transmission des compétences entre experts et novices (« The Skill Code », 2024) ; coauteur du rapport DORA 2025. Publie peu. Signaler l'intérêt commercial (SkillBench) et l'absence, à ce jour, d'étude publiée sur les développeurs."
+
+  - nom: Sam Newman
+    site: https://samnewman.io/
+    flux: manuel
+    archive: https://samnewman.io/talks/
+    chapitres: [10, 11, 16]
+    derniere_veille: null
+    notes: "Auteur de « Building Microservices ». Blog inactif depuis 2023 ; ses positions récentes passent par des podcasts, des talks et des vidéos. Ne citer qu'avec une transcription publiée ou vérifiable ; préciser qui parle et l'intérêt commercial de l'hôte le cas échéant."

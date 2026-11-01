@@ -136,35 +136,121 @@ publications:
     raison: Coveney et Succi (2025), limites théoriques des LLM citées par Jason Gorman. Chapitre 3 ; à lire à la source.
     ajoute_le: 2026-11-01
     origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://www.fightforthehuman.com/cognitive-helmets-for-the-ai-bicycle-part-1/
+    titre: "Cognitive Helmets for the AI Bicycle: Part 1"
+    source: Cat Hicks
+    raison: Sciences de l'apprentissage appliquées à l'IA (métacognition, effet de génération, pretesting), synthèse d'études mesurées. Chapitre 5.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://www.fightforthehuman.com/we-need-more-than-a-metaphor-here-are-testable-diagnostics-for-comprehension-debt/
+    titre: "We need more than a metaphor: here are testable diagnostics for comprehension debt"
+    source: Cat Hicks
+    raison: Causes organisationnelles de la comprehension debt, diagnostics mesurables ; traçabilité du terme. Chapitre 12 ou 11 ; détail des mesures payant.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://arxiv.org/abs/2610.37888
+    titre: Cognitive Debt in the GenAI Era - Listening to Practitioners' Voices on the Loss of Understanding
+    source: Margaret-Anne Storey (University of Victoria)
+    raison: "Revue de 76 sources de praticiens : causes, conséquences et pratiques contre la perte de compréhension. Chapitre 12 ou 11."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://arxiv.org/abs/2605.10702
+    titre: "ChatGPT: Friend or Foe When Comprehending and Changing Unfamiliar Code"
+    source: Margaret-Anne Storey (University of Victoria)
+    raison: Étude exploratoire (10 étudiants, think-aloud) sur la compréhension d'un code inconnu avec ou sans IA. Chapitre 12 ou 5.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://arxiv.org/abs/2603.22106
+    titre: "From Technical Debt to Cognitive and Intent Debt: Rethinking Software Health in the Age of AI"
+    source: Margaret-Anne Storey (University of Victoria)
+    raison: "Article de position : modèle de la triple dette (code, personnes, connaissance externalisée). Chapitre 11."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://arxiv.org/abs/2510.09023
+    titre: "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    raison: "Source primaire du chiffre cité au chapitre 14 via Willison : 12 défenses contournées par des attaques adaptatives. Chapitre 14."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://arxiv.org/abs/2503.18813
+    titre: Defeating Prompt Injections by Design
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    raison: "CaMeL : séparation du contrôle et des données autour du LLM, sécurité prouvable sur AgentDojo (77 % des tâches contre 84 % sans défense). Chapitre 14 ou 9."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://spylab.ai/blog/security-turing-test/
+    titre: The Security Turing Test
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    raison: "Essai : les dispositifs de sécurité sont calibrés sur les faiblesses humaines, pas sur celles des agents ; exemple d'un agent de code piégé. Chapitre 14 ou 9."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://aicoding.leaflet.pub/3majnyfydzs2y
+    titre: Regenerative Software
+    source: Chad Fowler (The Phoenix Architecture)
+    raison: "Texte fondateur : concevoir le code pour être remplacé, rendre durables interfaces, comportement et évaluations. Chapitre 12 (contrepoint à Brownfield Agentic Engineering)."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://aicoding.leaflet.pub/3mobohx4fq22x
+    titre: The Implementation Remembers
+    source: Chad Fowler (The Phoenix Architecture)
+    raison: "Limite posée par l'auteur à sa thèse : un code mature contient des leçons d'incidents non documentées. Chapitre 12."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://aicoding.leaflet.pub/3mbrvhyye4k2e
+    titre: "Relocating Rigor: The Discipline That Looks Like Recklessness"
+    source: Chad Fowler (The Phoenix Architecture)
+    raison: Origine de la « rigor relocation » reprise par Charity Majors et l'atelier Thoughtworks. Chapitre 13 ou 7.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://aicoding.leaflet.pub/3mtmk6ot6oc2i
+    titre: Most of Your Architecture Was Just Expensive Code
+    source: Chad Fowler (The Phoenix Architecture)
+    raison: « Regeneration test » pour distinguer la vraie architecture du coût du changement. Chapitre 11.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://www.wildworldofwork.org/p/training-is-dead
+    titre: Training is dead
+    source: Matt Beane (UC Santa Barbara)
+    raison: La formation ponctuelle à l'IA ne change pas les comportements ; construire les compétences dans le travail. Chapitre 5 ; opinion, intérêt commercial.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://www.wildworldofwork.org/p/ai-native-organizational-transformation
+    titre: AI-Native Organizational Transformation
+    source: Matt Beane (UC Santa Barbara)
+    raison: Distribuer des outils sans repenser le travail échange l'apprentissage contre la productivité. Chapitre 5 ou 17 ; hypothèses non testées.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam
+    titre: Building resilient systems with Sam Newman
+    source: Sam Newman
+    raison: Frontières des modules avant l'IA, limites durables des LLM. Chapitre 11 ou 16 ; transcription non accessible.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://www.youtube.com/watch?v=DTAiWZcWO-Q
+    titre: "Sam Newman on Software Factories: Why AI Can't Fix Your Production Incidents (Yet)"
+    source: Sam Newman
+    raison: Software factory comme système de production, dark factories, Team Topologies, cognitive debt. Chapitre 16 ; transcription nécessaire, hôte vendeur de conseil.
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://www.anthropic.com/research/AI-assistance-coding-skills
+    titre: How AI assistance impacts the formation of coding skills
+    source: hors sources suivies
+    raison: "Essai randomisé d'Anthropic (52 développeurs) : moins bonne acquisition des compétences avec assistance, surtout en débogage. Cité de seconde main par Osmani ; chapitre 5. Éditeur de l'outil."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
+  - url: https://arxiv.org/abs/2607.27586
+    titre: Is Solving Better Than Evaluating GenAI Solutions?
+    source: hors sources suivies
+    raison: "Essai croisé sur 220 étudiants : résoudre ou évaluer des solutions générées, sans différence aux examens. Chapitre 5 ou 6 ; abstract seul lu."
+    ajoute_le: 2026-11-01
+    origine: vérification /auteurs du 2026-11-01
 auteurs:
-  - nom: Matt Beane
-    pourquoi: Recherche (UC Santa Barbara, « The Skill Code ») sur l'érosion et la transmission des compétences face aux machines intelligentes ; coauteur du rapport DORA 2025.
-    chapitres:
-      - 5
-      - 6
-    ajoute_le: 2026-10-30
-    origine: rapport veille/rapports/2026-10-30.md
-  - nom: Cat Hicks
-    pourquoi: Psychologue de la recherche sur le travail des développeurs.
-    chapitres:
-      - 5
-      - 17
-    ajoute_le: 2026-10-30
-    origine: rapport veille/rapports/2026-10-30-2.md
   - nom: Emily Bache
     pourquoi: Coach technique (Samman Coaching) ; rassemble et analyse des harnesses TDD de praticiens. Deux de ses vidéos sont entrées au corpus le 2026-11-01 (chapitres 5 et 6) ; son blog et Samman Coaching restent à évaluer comme source avec flux.
     chapitres:
       - 5
       - 6
       - 13
-    ajoute_le: 2026-10-30
-    origine: rapport veille/rapports/2026-10-30-2.md
-  - nom: Chad Fowler
-    pourquoi: À l'origine des idées de « rigor relocation » et de code regénérable (« Phoenix Architectures »).
-    chapitres:
-      - 7
-      - 11
-      - 12
     ajoute_le: 2026-10-30
     origine: rapport veille/rapports/2026-10-30-2.md
   - nom: Johann Rehberger
@@ -192,20 +278,4 @@ auteurs:
       - 17
     ajoute_le: 2026-10-30
     origine: rapport veille/rapports/2026-10-30-3.md
-  - nom: Florian Tramèr (ETH Zurich, SPY Lab)
-    pourquoi: Auteur correspondant de l'article sur les patterns contre l'injection de prompt et coauteur de « The Attacker Moves Second » ; voix académique de référence sur la sécurité des agents.
-    chapitres:
-      - 9
-      - 14
-      - 15
-    ajoute_le: 2026-11-01
-    origine: veille du 2026-11-01
-  - nom: Sam Newman
-    pourquoi: Auteur de « Building Microservices » ; interroge de nombreuses équipes sur le travail agentique et les software factories, sceptique sur le TDD quand la boucle interne passe à l'agent.
-    chapitres:
-      - 11
-      - 13
-      - 16
-    ajoute_le: 2026-11-01
-    origine: veille du 2026-11-01
 refuses: []
