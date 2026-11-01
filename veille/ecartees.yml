@@ -145,3 +145,108 @@ ecartees:
     source: hors sources suivies
     date_examen: 2026-10-30
     raison: Compte rendu de presse ; le rapport primaire de Thoughtworks a été ajouté au chapitre 13.
+  - url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+    titre: The lethal trifecta for AI agents
+    source: Simon Willison
+    date_examen: 2026-11-01
+    raison: "Redite : le concept est au chapitre 14 via Sietsma ; créditer l'origine dans cette entrée plutôt qu'ajouter une référence."
+  - url: https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/
+    titre: Design Patterns for Securing LLM Agents against Prompt Injections
+    source: Simon Willison
+    date_examen: 2026-11-01
+    raison: Commentaire de l'article arXiv 2506.08837, gardé en file comme source primaire.
+  - url: https://itrevolution.com/articles/vibe-coding-the-revolutionary-approach-transforming-software-development/
+    titre: "Vibe Coding: The Revolutionary Approach Transforming Software Development"
+    source: Steve Yegge et Gene Kim
+    date_examen: 2026-11-01
+    raison: Résumé promotionnel de l'éditeur (Leah Brown), sans renvoi à un texte des auteurs ; thèse déjà portée par Revenge of the junior developer.
+  - url: https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding
+    titre: "The Pulse: Anthropic kills the coding interview"
+    source: Gergely Orosz (The Pragmatic Engineer)
+    date_examen: 2026-11-01
+    raison: Actualité ; le fond durable est derrière le paywall.
+  - url: https://karpathy.bearblog.dev/hacker-tube/
+    titre: HackerTube
+    source: Andrej Karpathy
+    date_examen: 2026-11-01
+    raison: Anecdote de projet personnel, sans argument sur le métier.
+  - url: https://codemanship.wordpress.com/2026/10/18/the-secret-to-long-horizon-agent-autonomy-silent-failing/
+    titre: The Secret To Long-Horizon Agent Autonomy? Silent Failing
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Billet court qui redit la série sur la fiabilité ; affirmations sans source.
+  - url: https://codemanship.wordpress.com/2026/10/13/revisiting-the-dependable-dependencies-principle/
+    titre: Revisiting the Dependable Dependencies Principle
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Sans lien avec l'IA.
+  - url: https://codemanship.wordpress.com/2026/10/03/why-almost-nothing-you-read-online-about-ai-is-true/
+    titre: Why Almost Nothing You Read Online About AI Is True
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Billet satirique sans argument nouveau.
+  - url: https://codemanship.wordpress.com/2026/09/30/deterministic-when-possible-probabilistic-when-necessary-human-when-cheaper/
+    titre: Deterministic When Possible. Probabilistic When Necessary. Human When Cheaper.
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Anecdotes ; idée reprise dans I Am Ralph.
+  - url: https://codemanship.wordpress.com/2026/09/19/human-vs-agent-reliability-over-long-horizons-how-can-we-do-what-they-cant/
+    titre: Human vs. Agent Reliability Over Long Horizons – How Can We Do What They Can’t?
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Ébauche de l'argument repris dans Out-Of-Distribution Checks.
+  - url: https://codemanship.wordpress.com/2026/08/28/the-wall-confronting-reliable-coding-agent-autonomy/
+    titre: The Wall Confronting Reliable Coding Agent Autonomy
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Redite de la série sur la fiabilité.
+  - url: https://codemanship.wordpress.com/2026/05/21/extending-the-horizon-of-agent-autonomy-is-a-testing-problem/
+    titre: Extending The Horizon Of Agent Autonomy Is A Testing Problem
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Redite de la série et de l'interview SE Radio 732.
+  - url: https://codemanship.wordpress.com/2026/04/24/the-hottest-ai-skill-in-2026-coding-without-ai/
+    titre: The Hottest AI Coding Skill In 2026? Coding Without AI
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Redite de Staying Sharp ; ton promotionnel.
+  - url: https://codemanship.wordpress.com/2026/02/21/is-comprehension-debt-in-your-risk-register/
+    titre: Rely On AI And Get Left Behind
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Redite de Staying Sharp.
+  - url: https://codemanship.wordpress.com/2026/02/25/super-mediocrity/
+    titre: Super-Mediocrity
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Spéculation appuyée sur un phénomène différent (model collapse).
+  - url: https://codemanship.wordpress.com/2025/10/28/the-ai-ready-software-developer-13-you-are-the-intelligence/
+    titre: "The AI-Ready Software Developer #13 – You Are The Intelligence"
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Sans élément nouveau pour le chapitre 6.
+  - url: https://codemanship.wordpress.com/2025/09/12/clever-hans-couldnt-really-do-arithmetic-and-llms-dont-really-understand/
+    titre: Clever Hans Couldn't Really Do Arithmetic, and LLMs Don't Really Understand.
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Billet d'opinion court.
+  - url: https://codemanship.wordpress.com/2025/10/16/wax-on-wax-off/
+    titre: Wax On, Wax Off
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Annonce de formation.
+  - url: https://codemanship.wordpress.com/2025/11/19/our-senior-developers-already-know-this-stuff-jason/
+    titre: '"Our senior developers already know this stuff, Jason?"'
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Sans lien avec l'IA ; argumentaire commercial.
+  - url: https://codemanship.wordpress.com/2025/11/26/what-is-a-good-software-developer-anyway/
+    titre: What Is A "Good Software Developer", Anyway?
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Grille de recrutement, sans lien avec l'IA.
+  - url: https://codemanship.wordpress.com/2026/03/01/the-double-edged-sword-of-automation/
+    titre: The Double-Edged Sword of Automation
+    source: Jason Gorman (Codemanship)
+    date_examen: 2026-11-01
+    raison: Automatisation des processus métier, hors sujet.

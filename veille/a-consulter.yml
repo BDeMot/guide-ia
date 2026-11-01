@@ -19,123 +19,123 @@ publications:
   - url: https://simonwillison.net/2025/Oct/7/vibe-engineering/
     titre: Vibe engineering
     source: Simon Willison
-    raison: Terme abandonné par l'auteur au profit d'« agentic engineering » ; recoupe le billet retenu au chapitre 1. Utile pour le chapitre 2 ou 4.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://simonwillison.net/2025/Sep/30/designing-agentic-loops/
-    titre: Designing agentic loops
-    source: Simon Willison
-    raison: Credentials limités, plafonds budgétaires, choix des problèmes à confier ; pour le chapitre 9 ou 15.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/
-    titre: Design Patterns for Securing LLM Agents against Prompt Injections
-    source: Simon Willison
-    raison: Six patterns architecturaux contre l'injection de prompt ; pour le chapitre 14, idéalement via l'article d'origine (arXiv 2506.08837).
+    raison: "Lu : douze pratiques que les agents rendent plus précieuses (« AI tools amplify existing expertise »). Chapitre 2 ou 4 ; recoupe l'entrée Willison du chapitre 1."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/
     titre: Conceptual integrity and counting lines of code
     source: Simon Willison
-    raison: Intégrité conceptuelle selon Brooks ; pour le chapitre 11.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/
-    titre: Writing code is cheap now
-    source: Simon Willison
-    raison: ; non daté. Le code est bon marché, le bon code ne l'est pas ; pour le chapitre 2 ou 11.
+    raison: "Lu : intégrité conceptuelle de Brooks quand ajouter une fonctionnalité ne coûte plus rien. Chapitre 11 ; premier à retenir au prochain passage."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/
     titre: Linear walkthroughs
     source: Simon Willison
-    raison: Technique de compréhension d'un code vibe codé, mais liée à un outil de l'auteur ; pour le chapitre 12.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
-    titre: The lethal trifecta for AI agents
-    source: Simon Willison
-    raison: Source d'origine du concept, présent au chapitre 14 via Sietsma ; à ajouter comme source primaire.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
-    titre: Measuring AI Ability to Complete Long Software Tasks
-    source: Recherche empirique (DORA, METR, Nicole Forsgren)
-    raison: Non lu. Concept de « time horizon » pour le chapitre 3, à lire avec la note « Clarifying limitations of time horizon ».
+    raison: "Lu : visite commentée d'un code vibe codé produite par l'agent, pour comprendre et apprendre. Chapitre 5 ou 12 ; mince et lié à un outil de l'auteur."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://metr.org/blog/2026-05-11-ai-usage-survey/
     titre: Measuring the Self-Reported Impact of Early-2026 AI on Technical Worker Productivity
     source: Recherche empirique (DORA, METR, Nicole Forsgren)
-    raison: Non lu ; candidat pour le chapitre 17.
+    raison: "Lu : 349 répondants, gain de vitesse déclaré ×3 contre gain de valeur ×1,4 à ×2. Chapitre 17 ; non retenu faute de place."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://leanpub.com/ai-assisted-programming
     titre: AI Assisted Programming
     source: Michael Feathers
-    raison: Livre payant, achevé à 30 % (mise à jour du 26 mai 2025) ; seule la table des matières est lisible. À revoir quand il sera terminé.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://www.youtube.com/watch?v=ydAin2IWaQo
-    titre: Agentic AI coding BREAKS Mob Programming (Here's How To Fix It)
-    source: Dave Farley
-    raison: ; lu en partie. Apprentissage des juniors en mob programming, pour le chapitre 5.
+    raison: Toujours achevé à 30 % (mise à jour du 26 mai 2025), payant. À revoir quand il sera terminé.
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2
     titre: "AI's impact on software engineers in 2026: key trends, Part 2"
     source: Gergely Orosz (The Pragmatic Engineer)
-    raison: Payant, non lu ; suite de l'article retenu au chapitre 2.
+    raison: "Partie gratuite lue : section sur les juniors (agent qui amplifie le niveau du pilote, perte des tâches formatrices). Chapitre 5 ; sections 5 à 7 payantes."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://newsletter.pragmaticengineer.com/p/are-ai-agents-actually-slowing-us
     titre: Are AI agents actually slowing us down?
     source: Gergely Orosz (The Pragmatic Engineer)
-    raison: Payant, non lu ; potentiellement utile pour le chapitre 3.
+    raison: Partie gratuite faite d'incidents rapportés de seconde main ; sections de fond payantes. Chapitre 14 ou 17.
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews
     titre: What is happening with code reviews?
     source: Gergely Orosz (The Pragmatic Engineer)
-    raison: Payant, non lu ; potentiellement utile pour le chapitre 14.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://itrevolution.com/articles/vibe-coding-the-revolutionary-approach-transforming-software-development/
-    titre: "Vibe Coding: The Revolutionary Approach Transforming Software Development"
-    source: Steve Yegge et Gene Kim
-    raison: Résumé promotionnel du livre écrit par l'éditeur, chiffres non sourcés. Le livre (qui appelle « vibe coding » tout code produit par l'IA, désaccord utile au chapitre 1) n'a pas été lu.
+    raison: Partie gratuite substantielle (triage par blast radius, données de Duckbill, revue du plan plutôt que de l'implémentation). Chapitre 14 ; première candidate au prochain passage.
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://steve-yegge.medium.com/vibe-maintainer-a2273a841040
     titre: Vibe Maintainer
     source: Steve Yegge et Gene Kim
-    raison: Non lu ; candidat pour le chapitre 12 ou 14.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://mitchellh.com/writing/non-trivial-vibing
-    titre: Vibing a Non-Trivial Ghostty Feature
-    source: Mitchell Hashimoto et Armin Ronacher
-    raison: Excellente étude de cas chiffrée (16 sessions, coût, « anti-slop session », revue manuelle) ; pour le chapitre 10 ou 12.
+    raison: "Lu (flux RSS) : revue de ~50 PR générées par jour confiée à un agent « sheriff », un quart exige encore le jugement humain (« taste »). Chapitre 14, renvoi 6 ; non retenu faute de place."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://lucumr.pocoo.org/2025/6/12/agentic-coding/
     titre: Agentic Coding Recommendations
     source: Mitchell Hashimoto et Armin Ronacher
-    raison: ; en partie lié à un outil et à un langage. Pour les chapitres 9 et 11.
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://lucumr.pocoo.org/2025/9/29/90-percent/
-    titre: 90%
-    source: Mitchell Hashimoto et Armin Ronacher
-    raison: Non lu en détail ; candidat pour le chapitre 3 ou 11.
+    raison: "Lu : choix de langage et d'outils pour les agents, logs comme outils. Chapitre 9 ou 11 ; en partie daté."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://arxiv.org/abs/2506.08837
     titre: Design Patterns for Securing LLM Agents against Prompt Injections
     source: hors sources suivies
-    raison: Article d'origine des six patterns contre l'injection de prompt, à citer directement au chapitre 14.
+    raison: "Lu (abstract et HTML jusqu'aux conclusions) : six patterns d'architecture contre l'injection de prompt, cas d'un agent de développement ; entrée rédigée, non retenue faute de place. Chapitre 14 ; annexe A non lue."
     ajoute_le: 2026-10-30
     origine: rapport veille/rapports/2026-10-30.md
+  - url: https://codemanship.wordpress.com/2026/05/17/i-am-ralph-cress-principles-in-practice/
+    titre: I Am Ralph – CRESS Principles in Practice
+    source: Jason Gorman (Codemanship)
+    raison: "Lu : retour d'expérience de retrait progressif de l'autonomie (TDD, petits pas, l'humain décide de l'étape suivante). Chapitre 15, contrepoint à Practical Loop Engineering."
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2026/09/14/out-of-distribution-errors-what-might-be-lurking-in-the-long-tail/
+    titre: Out-Of-Distribution Errors – What Might Be Lurking In The Long Tail?
+    source: Jason Gorman (Codemanship)
+    raison: Taxonomie de sept catégories d'erreurs qui échappent aux quality gates, avec techniques de détection. Chapitre 13.
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2026/09/29/the-agentic-sweet-spot-the-human-is-the-loop/
+    titre: The Agentic Sweet Spot? The Human IS The Loop
+    source: Jason Gorman (Codemanship)
+    raison: "Version économique du modèle de fiabilité : optimum coût/fiabilité, divergence avec les dark factories. Chapitre 15 ou 16."
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2026/09/11/the-development-team-was-never-the-typing-pool/
+    titre: The Development Team Was Never The Typing Pool
+    source: Jason Gorman (Codemanship)
+    raison: "Contrepoint au récit du déplacement du rôle : écrire du code n'a jamais été l'essentiel du métier. Chapitre 2 ; chiffre non sourcé."
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2026/01/29/writing-code-may-be-dead-not-really-but-reading-code-will-live-on/
+    titre: Writing Code May Be Dead (Not Really), But Reading Code Will Live On
+    source: Jason Gorman (Codemanship)
+    raison: Avoir écrit du code prédit la capacité à le lire. Chapitre 5 ; études invoquées non citées.
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2026/08/12/ai-software-development-what-does-the-data-say/
+    titre: AI Software Development – What Does The Data Say?
+    source: Jason Gorman (Codemanship)
+    raison: Bibliographie commentée d'une trentaine d'études (SlopCodeBench, SWE-CI, How Fast Do Agents Rot?…). Mine de sources primaires pour les chapitres 3, 14 et 15, à lire à la source plutôt que ce billet.
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2025/09/30/comprehension-debt-the-ticking-time-bomb-of-llm-generated-code/
+    titre: "Comprehension Debt: The Ticking Time Bomb of LLM-Generated Code"
+    source: Jason Gorman (Codemanship)
+    raison: "Traçabilité : Gorman emploie « comprehension debt » dès septembre 2025, le corpus attribue la notion à Osmani. Vérifier l'antériorité. Chapitre 11 ou 12."
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://codemanship.wordpress.com/2025/10/30/the-ai-ready-software-developer-index/
+    titre: The AI-Ready Software Developer (index de la série)
+    source: Jason Gorman (Codemanship)
+    raison: "Série de 24 billets en grande partie non lue ; viser #10 Comprehension Debt, #12 Ground Truth, #22 Test Your Tests, et « Why Does TDD Work So Well In AI-assisted Programming? »."
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
+  - url: https://arxiv.org/abs/2507.19703
+    titre: The wall confronting large language models
+    source: hors sources suivies
+    raison: Coveney et Succi (2025), limites théoriques des LLM citées par Jason Gorman. Chapitre 3 ; à lire à la source.
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01 (plafond atteint)
 auteurs:
   - nom: Matt Beane
     pourquoi: Recherche (UC Santa Barbara, « The Skill Code ») sur l'érosion et la transmission des compétences face aux machines intelligentes ; coauteur du rapport DORA 2025.
@@ -152,8 +152,10 @@ auteurs:
     ajoute_le: 2026-10-30
     origine: rapport veille/rapports/2026-10-30-2.md
   - nom: Emily Bache
-    pourquoi: Coach technique (Samman Coaching) ; rassemble et analyse des harnesses TDD de praticiens.
+    pourquoi: Coach technique (Samman Coaching) ; rassemble et analyse des harnesses TDD de praticiens. Deux de ses vidéos sont entrées au corpus le 2026-11-01 (chapitres 5 et 6) ; son blog et Samman Coaching restent à évaluer comme source avec flux.
     chapitres:
+      - 5
+      - 6
       - 13
     ajoute_le: 2026-10-30
     origine: rapport veille/rapports/2026-10-30-2.md
@@ -190,4 +192,20 @@ auteurs:
       - 17
     ajoute_le: 2026-10-30
     origine: rapport veille/rapports/2026-10-30-3.md
+  - nom: Florian Tramèr (ETH Zurich, SPY Lab)
+    pourquoi: Auteur correspondant de l'article sur les patterns contre l'injection de prompt et coauteur de « The Attacker Moves Second » ; voix académique de référence sur la sécurité des agents.
+    chapitres:
+      - 9
+      - 14
+      - 15
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01
+  - nom: Sam Newman
+    pourquoi: Auteur de « Building Microservices » ; interroge de nombreuses équipes sur le travail agentique et les software factories, sceptique sur le TDD quand la boucle interne passe à l'agent.
+    chapitres:
+      - 11
+      - 13
+      - 16
+    ajoute_le: 2026-11-01
+    origine: veille du 2026-11-01
 refuses: []
