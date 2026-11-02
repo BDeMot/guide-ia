@@ -250,3 +250,53 @@ ecartees:
     source: Jason Gorman (Codemanship)
     date_examen: 2026-11-01
     raison: Automatisation des processus métier, hors sujet.
+  - url: https://www.anthropic.com/research/AI-assistance-coding-skills
+    titre: How AI assistance impacts the formation of coding skills
+    source: hors sources suivies
+    date_examen: 2026-11-02
+    raison: Billet de présentation ; l'article arXiv 2601.20245, plus complet, a été retenu au chapitre 5.
+  - url: https://aicoding.leaflet.pub/3majnyfydzs2y
+    titre: Regenerative Software
+    source: Chad Fowler (The Phoenix Architecture)
+    date_examen: 2026-11-02
+    raison: Manifeste qui annonce la série sans argumenter ; la thèse est développée dans « Evaluations Are the Real Codebase ».
+  - url: https://aicoding.leaflet.pub/3mobohx4fq22x
+    titre: The Implementation Remembers
+    source: Chad Fowler (The Phoenix Architecture)
+    date_examen: 2026-11-02
+    raison: Intégré comme nuance dans l'entrée « Evaluations Are the Real Codebase » (chapitre 12).
+  - url: https://aicoding.leaflet.pub/3md5ftetaes2e
+    titre: The Deletion Test
+    source: Chad Fowler (The Phoenix Architecture)
+    date_examen: 2026-11-02
+    raison: Version courte d'« Evaluations Are the Real Codebase ».
+  - url: https://aicoding.leaflet.pub/3maqpvianlc2a
+    titre: Code Was Never the Asset
+    source: Chad Fowler (The Phoenix Architecture)
+    date_examen: 2026-11-02
+    raison: Généralités sur l'économie du code.
+  - url: https://aicoding.leaflet.pub/3mwlzitykzc27
+    titre: The Spec Can Come Later
+    source: Chad Fowler (The Phoenix Architecture)
+    date_examen: 2026-11-02
+    raison: Billet court qui relaie surtout l'article AfterVibe (Paltenghi et Chandra), à lire à la source.
+  - url: https://arxiv.org/abs/2607.05277
+    titre: Untrusted Content Masking for Web Agents with Security Guarantees
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    date_examen: 2026-11-02
+    raison: Agents web, sans lien avec le développement logiciel.
+  - url: https://arxiv.org/abs/2601.09923
+    titre: "CaMeLs Can Use Computers Too: System-level Security for Computer Use Agents"
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    date_examen: 2026-11-02
+    raison: Agents de computer use ; ne servirait que si CaMeL entrait au corpus.
+  - url: https://arxiv.org/abs/2609.36121
+    titre: "Render Before Reading: Visual Rendering as a Prompt Injection Defense"
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    date_examen: 2026-11-02
+    raison: Défense au niveau du modèle, sans principe applicable par un développeur.
+  - url: https://www.wildworldofwork.org/p/surveillance-eats-your-ai-strategy
+    titre: Surveillance eats your AI strategy for breakfast
+    source: Matt Beane (UC Santa Barbara)
+    date_examen: 2026-11-02
+    raison: Gouvernance RH de l'adoption de l'IA en général, chiffres de seconde main.

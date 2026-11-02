@@ -22,12 +22,6 @@ publications:
     raison: "Lu : douze pratiques que les agents rendent plus précieuses (« AI tools amplify existing expertise »). Chapitre 2 ou 4 ; recoupe l'entrée Willison du chapitre 1."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/
-    titre: Conceptual integrity and counting lines of code
-    source: Simon Willison
-    raison: "Lu : intégrité conceptuelle de Brooks quand ajouter une fonctionnalité ne coûte plus rien. Chapitre 11 ; premier à retenir au prochain passage."
-    ajoute_le: 2026-10-30
-    origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
   - url: https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/
     titre: Linear walkthroughs
     source: Simon Willison
@@ -76,12 +70,6 @@ publications:
     raison: "Lu : choix de langage et d'outils pour les agents, logs comme outils. Chapitre 9 ou 11 ; en partie daté."
     ajoute_le: 2026-10-30
     origine: veille du 2026-10-30 (plafond atteint ou lecture impossible)
-  - url: https://arxiv.org/abs/2506.08837
-    titre: Design Patterns for Securing LLM Agents against Prompt Injections
-    source: hors sources suivies
-    raison: "Lu (abstract et HTML jusqu'aux conclusions) : six patterns d'architecture contre l'injection de prompt, cas d'un agent de développement ; entrée rédigée, non retenue faute de place. Chapitre 14 ; annexe A non lue."
-    ajoute_le: 2026-10-30
-    origine: rapport veille/rapports/2026-10-30.md
   - url: https://codemanship.wordpress.com/2026/05/17/i-am-ralph-cress-principles-in-practice/
     titre: I Am Ralph – CRESS Principles in Practice
     source: Jason Gorman (Codemanship)
@@ -92,12 +80,6 @@ publications:
     titre: Out-Of-Distribution Errors – What Might Be Lurking In The Long Tail?
     source: Jason Gorman (Codemanship)
     raison: Taxonomie de sept catégories d'erreurs qui échappent aux quality gates, avec techniques de détection. Chapitre 13.
-    ajoute_le: 2026-11-01
-    origine: veille du 2026-11-01 (plafond atteint)
-  - url: https://codemanship.wordpress.com/2026/09/29/the-agentic-sweet-spot-the-human-is-the-loop/
-    titre: The Agentic Sweet Spot? The Human IS The Loop
-    source: Jason Gorman (Codemanship)
-    raison: "Version économique du modèle de fiabilité : optimum coût/fiabilité, divergence avec les dark factories. Chapitre 15 ou 16."
     ajoute_le: 2026-11-01
     origine: veille du 2026-11-01 (plafond atteint)
   - url: https://codemanship.wordpress.com/2026/09/11/the-development-team-was-never-the-typing-pool/
@@ -136,28 +118,16 @@ publications:
     raison: Coveney et Succi (2025), limites théoriques des LLM citées par Jason Gorman. Chapitre 3 ; à lire à la source.
     ajoute_le: 2026-11-01
     origine: veille du 2026-11-01 (plafond atteint)
-  - url: https://www.fightforthehuman.com/cognitive-helmets-for-the-ai-bicycle-part-1/
-    titre: "Cognitive Helmets for the AI Bicycle: Part 1"
-    source: Cat Hicks
-    raison: Sciences de l'apprentissage appliquées à l'IA (métacognition, effet de génération, pretesting), synthèse d'études mesurées. Chapitre 5.
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
   - url: https://www.fightforthehuman.com/we-need-more-than-a-metaphor-here-are-testable-diagnostics-for-comprehension-debt/
     titre: "We need more than a metaphor: here are testable diagnostics for comprehension debt"
     source: Cat Hicks
     raison: Causes organisationnelles de la comprehension debt, diagnostics mesurables ; traçabilité du terme. Chapitre 12 ou 11 ; détail des mesures payant.
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
-  - url: https://arxiv.org/abs/2610.37888
-    titre: Cognitive Debt in the GenAI Era - Listening to Practitioners' Voices on the Loss of Understanding
-    source: Margaret-Anne Storey (University of Victoria)
-    raison: "Revue de 76 sources de praticiens : causes, conséquences et pratiques contre la perte de compréhension. Chapitre 12 ou 11."
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
   - url: https://arxiv.org/abs/2605.10702
     titre: "ChatGPT: Friend or Foe When Comprehending and Changing Unfamiliar Code"
     source: Margaret-Anne Storey (University of Victoria)
-    raison: Étude exploratoire (10 étudiants, think-aloud) sur la compréhension d'un code inconnu avec ou sans IA. Chapitre 12 ou 5.
+    raison: "Lu (abstract et HTML) : 10 étudiants avancés, 5 avec et 5 sans ChatGPT, corrigent un bug dans une codebase de 35 000 lignes ; sept causes de blocage, la compréhension prédit mieux la réussite que l'accès à l'IA. Chapitre 12 (onboarding) ou 5 ; échantillon très petit."
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
   - url: https://arxiv.org/abs/2603.22106
@@ -166,46 +136,22 @@ publications:
     raison: "Article de position : modèle de la triple dette (code, personnes, connaissance externalisée). Chapitre 11."
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
-  - url: https://arxiv.org/abs/2510.09023
-    titre: "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections"
-    source: Florian Tramèr (ETH Zurich, SPY Lab)
-    raison: "Source primaire du chiffre cité au chapitre 14 via Willison : 12 défenses contournées par des attaques adaptatives. Chapitre 14."
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
   - url: https://arxiv.org/abs/2503.18813
     titre: Defeating Prompt Injections by Design
     source: Florian Tramèr (ETH Zurich, SPY Lab)
-    raison: "CaMeL : séparation du contrôle et des données autour du LLM, sécurité prouvable sur AgentDojo (77 % des tâches contre 84 % sans défense). Chapitre 14 ou 9."
+    raison: "Lu (abstract et HTML) : CaMeL réalise les patterns dual LLM et code-then-execute (77 % des tâches contre 84 % sans défense, environ 2,8 fois plus de tokens). Chapitre 14 ou 9 ; redondant avec Design Patterns tant qu'il n'y a pas de cas d'agent de code."
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
   - url: https://spylab.ai/blog/security-turing-test/
     titre: The Security Turing Test
     source: Florian Tramèr (ETH Zurich, SPY Lab)
-    raison: "Essai : les dispositifs de sécurité sont calibrés sur les faiblesses humaines, pas sur celles des agents ; exemple d'un agent de code piégé. Chapitre 14 ou 9."
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
-  - url: https://aicoding.leaflet.pub/3majnyfydzs2y
-    titre: Regenerative Software
-    source: Chad Fowler (The Phoenix Architecture)
-    raison: "Texte fondateur : concevoir le code pour être remplacé, rendre durables interfaces, comportement et évaluations. Chapitre 12 (contrepoint à Brownfield Agentic Engineering)."
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
-  - url: https://aicoding.leaflet.pub/3mobohx4fq22x
-    titre: The Implementation Remembers
-    source: Chad Fowler (The Phoenix Architecture)
-    raison: "Limite posée par l'auteur à sa thèse : un code mature contient des leçons d'incidents non documentées. Chapitre 12."
+    raison: "Lu : agent de code piégé par une issue GitHub, slopsquatting, monoculture des modèles, contrôle par des modèles de fournisseurs différents. Chapitre 9 ou 14 ; meilleur candidat sécurité pour le prochain passage."
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
   - url: https://aicoding.leaflet.pub/3mbrvhyye4k2e
     titre: "Relocating Rigor: The Discipline That Looks Like Recklessness"
     source: Chad Fowler (The Phoenix Architecture)
     raison: Origine de la « rigor relocation » reprise par Charity Majors et l'atelier Thoughtworks. Chapitre 13 ou 7.
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
-  - url: https://aicoding.leaflet.pub/3mtmk6ot6oc2i
-    titre: Most of Your Architecture Was Just Expensive Code
-    source: Chad Fowler (The Phoenix Architecture)
-    raison: « Regeneration test » pour distinguer la vraie architecture du coût du changement. Chapitre 11.
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
   - url: https://www.wildworldofwork.org/p/training-is-dead
@@ -232,18 +178,54 @@ publications:
     raison: Software factory comme système de production, dark factories, Team Topologies, cognitive debt. Chapitre 16 ; transcription nécessaire, hôte vendeur de conseil.
     ajoute_le: 2026-11-01
     origine: vérification /auteurs du 2026-11-01
-  - url: https://www.anthropic.com/research/AI-assistance-coding-skills
-    titre: How AI assistance impacts the formation of coding skills
-    source: hors sources suivies
-    raison: "Essai randomisé d'Anthropic (52 développeurs) : moins bonne acquisition des compétences avec assistance, surtout en débogage. Cité de seconde main par Osmani ; chapitre 5. Éditeur de l'outil."
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
-  - url: https://arxiv.org/abs/2607.27586
-    titre: Is Solving Better Than Evaluating GenAI Solutions?
-    source: hors sources suivies
-    raison: "Essai croisé sur 220 étudiants : résoudre ou évaluer des solutions générées, sans différence aux examens. Chapitre 5 ou 6 ; abstract seul lu."
-    ajoute_le: 2026-11-01
-    origine: vérification /auteurs du 2026-11-01
+  - url: https://www.fightforthehuman.com/cognitive-helmets-for-the-ai-bicycle-part-2-the-sometimes-wrong-bot/
+    titre: "Cognitive Helmets for the AI Bicycle Part 2: The Sometimes-Wrong Bot"
+    source: Cat Hicks
+    raison: "Lu : les juniors suivent souvent mieux leurs besoins métacognitifs que certains seniors, ne pas les tenir à l'écart des outils (contrepoint à Gorman). Chapitre 5 ; surtout la présentation d'une skill de l'autrice, peu d'entretiens."
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://www.fightforthehuman.com/what-helps-an-identity-crisis/
+    titre: What helps an identity crisis?
+    source: Cat Hicks
+    raison: « AI Skill Threat » et normes d'apprentissage, étude « The New Developer » sur plus de 3 000 ingénieurs. Chapitre 5 (renvoi 2) ; lire aussi l'étude primaire.
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://www.fightforthehuman.com/how-not-to-measure-the-roi-from-ai-in-your-software-organization/
+    titre: How Not to Measure the ROI from AI in your Software Organization
+    source: Cat Hicks
+    raison: Trois pièges pour mesurer l'effet de l'IA dans une organisation logicielle. Chapitre 3 ou 17 ; contrepoint méthodologique aux mesures de productivité.
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://arxiv.org/abs/2509.12491
+    titre: Good Vibrations? A Qualitative Study of Co-Creation, Communication, Flow, and Trust in Vibe Coding
+    source: Margaret-Anne Storey (University of Victoria)
+    raison: "Grounded theory du vibe coding : la confiance place le travail entre délégation et co-création. Chapitre 1 (renvois 10, 12)."
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://arxiv.org/abs/2507.21280
+    titre: '"Maybe We Need Some More Examples:" Individual and Team Drivers of Developer GenAI Tool Use'
+    source: Margaret-Anne Storey (University of Victoria)
+    raison: "54 développeurs dans 27 équipes ; « Productivity Pressure Paradox » : exiger des gains rapides sans investir dans l'apprentissage. Chapitre 5."
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://arxiv.org/abs/2610.24935
+    titre: "Theory of Developer Momentum: The Developer's Experience of Progress and the Craft of Maintaining Motion"
+    source: Margaret-Anne Storey (University of Victoria)
+    raison: 12 entretiens ; vérifier ce que la partie sur les workflows agentiques apporte. Chapitre 2 (renvoi 10), priorité basse.
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://arxiv.org/abs/2605.01970
+    titre: "Trojan Hippo Bench: A Dynamic Benchmark for Persistent Memory Attacks and Defenses in LLM Agents"
+    source: Florian Tramèr (ETH Zurich, SPY Lab)
+    raison: Un payload implanté dans la mémoire persistante d'un agent reste actif après 100 sessions ; transposable aux fichiers de mémoire des agents de code. Chapitre 9, priorité basse.
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
+  - url: https://aicoding.leaflet.pub/3mtgs36dnq22o
+    titre: The Specification Is Not a Document
+    source: Chad Fowler (The Phoenix Architecture)
+    raison: "Lu en partie : la spécification vue comme un graphe de connaissances interrogeable. Chapitre 7 (renvoi 12), prospectif."
+    ajoute_le: 2026-11-02
+    origine: veille du 2026-11-02
 auteurs:
   - nom: Emily Bache
     pourquoi: Coach technique (Samman Coaching) ; rassemble et analyse des harnesses TDD de praticiens. Deux de ses vidéos sont entrées au corpus le 2026-11-01 (chapitres 5 et 6) ; son blog et Samman Coaching restent à évaluer comme source avec flux.

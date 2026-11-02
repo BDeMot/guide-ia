@@ -47,5 +47,9 @@ export function readYaml(path, key) {
 }
 
 export function normalizeUrl(url) {
-  return url.trim().replace(/^http:/, 'https:').replace(/\/+$/, '')
+  return url.trim()
+    .replace(/^http:/, 'https:')
+    .replace(/\/+$/, '')
+    // arXiv feeds link to a version (2610.37888v1); the corpus cites the abstract.
+    .replace(/(arxiv\.org\/abs\/\d+\.\d+)v\d+$/, '$1')
 }
