@@ -223,7 +223,7 @@ Un ouvrage qui enseigne non seulement **comment travailler avec des agents IA**,
 Le livre doit aider son lecteur à devenir un meilleur ingénieur grâce à l'IA, et non simplement un utilisateur plus habile d'outils de génération de code.
 ## 10. Veille et synthèses
 
-Le corpus est enrichi par un agent IA, lancé à la demande pour l'instant. Cinq skills décrivent son travail ; leurs règles font foi :
+Le corpus est enrichi par un agent IA, lancé à la demande ou par une automation hebdomadaire (voir « Exécution automatique » ci-dessous). Cinq skills décrivent son travail ; leurs règles font foi :
 
 - `/auteurs` (`.claude/skills/auteurs/SKILL.md`) repère les chapitres où les voix manquent, propose de nouveaux auteurs de référence, vérifie leur légitimité et inscrit ceux que Benjamin accepte.
 - `/sources` (`.claude/skills/sources/SKILL.md`) tient les registres : où chercher pour chaque auteur suivi, et les publications à consulter plus tard.
@@ -245,6 +245,13 @@ Scripts (à lancer depuis la racine du dépôt) :
 - `npm run feeds -- check [nom]` : vérifie que les flux répondent.
 - `npm run feeds -- list [nom] [--since AAAA-MM-JJ]` : liste les publications nouvelles des sources, sans celles déjà traitées.
 - `npm run entries -- <propositions.md> [--dry-run]` : insère les entrées proposées sous leur chapitre et met à jour le total.
+
+Exécution automatique :
+
+- Une automation Nimbalyst (`nimbalyst-local/automations/veille-hebdomadaire.md`, locale, non versionnée) tourne chaque lundi : veille chaque semaine ; entretien des sources et propositions d'auteurs le premier lundi du mois ; réécriture complète des synthèses le premier lundi de janvier, avril, juillet et octobre.
+- En exécution automatique, le travail se fait dans un worktree dédié, sur une branche `auto/AAAA-MM-JJ`, et aboutit à une pull request. Jamais de commit sur `main` : le merge publie le site (Render).
+- Si une pull request `auto/…` est encore ouverte, l'automation ne lance rien et le signale.
+- Les étapes interactives restent à Benjamin : accepter un auteur (`/auteurs <nom>`), relire et merger les pull requests, passer une synthèse en `relue`.
 
 Règles communes :
 
