@@ -1,0 +1,17 @@
+# Render Blueprint: the guide is published as a free static site.
+services:
+  - type: web
+    runtime: static
+    name: guide-ia
+    branch: main
+    buildCommand: npm ci && npm run generate
+    staticPublishPath: .output/public
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+    routes:
+      # Safety net for paths without a generated file: Nuxt renders them
+      # client-side from its SPA shell.
+      - type: rewrite
+        source: /*
+        destination: /200.html

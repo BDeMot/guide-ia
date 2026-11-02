@@ -10,11 +10,21 @@ export default defineNuxtConfig({
 
   site: {
     name: 'Guide IA agentique',
+    // Required by the sitemap when the site is generated.
+    url: 'https://guide-ia.onrender.com',
+  },
+
+  nitro: {
+    prerender: {
+      // Render does not map /page to page.html: write page/index.html instead.
+      autoSubfolderIndex: true,
+    },
   },
 
   studio: {
-    // Required only for publishing from production. The GitHub repository
-    // does not exist yet: update owner/repo once it is created.
+    // The site is deployed as static files on Render, so Studio only runs
+    // locally (npm run dev). This repository is used if Studio is ever
+    // enabled in production.
     repository: {
       provider: 'github',
       owner: 'BDeMot',
