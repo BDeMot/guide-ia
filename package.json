@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "check": "node scripts/check-corpus.mjs",
     "feeds": "node scripts/feeds.mjs",
-    "entries": "node scripts/add-entries.mjs"
+    "entries": "node scripts/add-entries.mjs",
+    "archive": "node scripts/archive-sources.mjs"
   },
   "dependencies": {
     "better-sqlite3": "^12.11.1",
@@ -18,6 +19,11 @@
     "nuxt-studio": "^1.8.0"
   },
   "devDependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "jsdom": "^29.1.1",
+    "turndown": "^7.2.5",
+    "turndown-plugin-gfm": "^1.0.2",
+    "unpdf": "^1.9.1",
     "yaml": "^2.9.1"
   }
 }

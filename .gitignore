@@ -28,3 +28,6 @@ logs
 
 # Nimbalyst local plans
 nimbalyst-local
+
+# Archive personnelle des articles cités (npm run archive) : textes sous droits, ne pas publier
+sources
