@@ -6,7 +6,7 @@ Le projet, sa méthode et ses principes sont décrits dans [CLAUDE.md](CLAUDE.md
 
 ## Contenu
 
-Le corpus est dans `content/` : une page de présentation, un dossier par partie du livre avec une page par chapitre, les synthèses par chapitre et des annexes. Les préfixes numériques (`2.`, `07.`…) fixent l'ordre de la navigation et n'apparaissent pas dans les URL.
+Le corpus est dans `content/` : une page de présentation, un dossier par partie du livre avec une page par chapitre, les synthèses par chapitre, des anthologies commentées sur des thèmes transversaux et des annexes. Les préfixes numériques (`2.`, `07.`…) fixent l'ordre de la navigation et n'apparaissent pas dans les URL.
 
 ## Veille et synthèses
 

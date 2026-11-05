@@ -16,7 +16,7 @@ Argument facultatif :
 
 Lire :
 - les synthèses `content/7.syntheses/*.md` : le champ `auteurs:` du frontmatter (en dessous de 4 auteurs distincts, le chapitre manque de voix) et la section **Angles morts** ;
-- l'annexe `content/8.annexes/01.lacunes-editoriales-identifiees.md` ;
+- l'annexe `content/9.annexes/01.lacunes-editoriales-identifiees.md` ;
 - la section `auteurs:` de `veille/a-consulter.yml` (pistes déjà notées) et la section `refuses:` (ne pas reproposer sans fait nouveau) ;
 - `veille/sources.yml`, pour ne pas proposer un auteur déjà suivi.
 

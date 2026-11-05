@@ -22,7 +22,7 @@ Si Benjamin donne directement des références à ajouter (URL, titres, auteurs)
 ## 3. Mettre à jour le reste du guide
 
 - `content/1.presentation.md` : si une nouvelle source ou un nouveau type de preuve entre dans le corpus, le mentionner dans la ligne « **Nouveautés vX.Y :** » de la version en cours. Ne changer de numéro de version que si Benjamin le demande ou si l'ensemble des ajouts change la nature du corpus.
-- `content/8.annexes/01.lacunes-editoriales-identifiees.md` : si un ajout comble, même en partie, une lacune listée, l'indiquer sur la ligne du chapitre ; si la veille a révélé une lacune nouvelle, l'ajouter.
+- `content/9.annexes/01.lacunes-editoriales-identifiees.md` : si un ajout comble, même en partie, une lacune listée, l'indiquer sur la ligne du chapitre ; si la veille a révélé une lacune nouvelle, l'ajouter.
 - Renvois croisés : si une nouvelle entrée contredit ou corrige une entrée existante (date, attribution, renvoi faux), corriger l'entrée existante et le dire dans le message de commit.
 
 ## 4. Mettre à jour les synthèses

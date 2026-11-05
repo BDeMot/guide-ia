@@ -118,7 +118,8 @@ Le corpus a d'abord été constitué dans un document Markdown unique (`guide_ia
 - `content/1.presentation.md` : périmètre, sources et mode de lecture du corpus.
 - Un dossier par partie (`content/2.partie-1-…` à `content/6.partie-5-…`), une page par chapitre.
 - `content/7.syntheses/` : une synthèse par chapitre, rédigée par un agent IA (voir §10).
-- `content/8.annexes/` : lacunes éditoriales et principes de rédaction.
+- `content/8.anthologies/` : anthologies commentées sur un thème transversal (voir §10).
+- `content/9.annexes/` : lacunes éditoriales et principes de rédaction.
 
 Le nombre de références et leur répartition par site sont donnés par `npm run check` et repris dans `content/1.presentation.md`.
 
@@ -259,4 +260,5 @@ Règles communes :
 - Format d'une entrée : `- **Central|Complémentaire · Site** [Titre exact](URL) — Auteur, date. …`, sans crochets autour de l'étiquette (Nuxt Studio et Nuxt Content les réécrivent).
 - Une synthèse ne cite que les références de son chapitre. Elle est marquée « Rédigée par un agent IA » et porte un `statut` (`non relue` ou `relue`). Seul Benjamin passe une synthèse en `relue`.
 - Une synthèse n'est pas une rédaction du livre (étape D) : elle prépare les étapes B et C.
+- Une anthologie (`content/8.anthologies/`) traite un thème transversal aux chapitres (par exemple l'ownership du code) : une introduction qui définit le thème, puis des chapitres où les citations des références, en version originale puis traduites, s'enchaînent selon que les auteurs s'appuient ou se répondent. Le texte propre reste minimal. Chaque citation est courte (une à trois phrases), relue à la source le jour de la rédaction, attribuée et liée à sa référence. Comme une synthèse, une anthologie est marquée « Rédigée par un agent IA », porte un `statut` et ne peut citer que des références du corpus ; ce qui n'a pas pu être lu à la source est marqué **À vérifier**.
 - Les registres YAML de `veille/` doivent rester valides : les scripts les lisent.
