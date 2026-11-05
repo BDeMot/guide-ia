@@ -35,6 +35,14 @@ Pour chaque chapitre touché, appliquer la skill `synthese` à ce chapitre. Elle
 2. Si le serveur de développement tourne (port 4170), vérifier que les pages des chapitres et des synthèses touchés répondent : `curl -s -o /dev/null -w '%{http_code}' http://localhost:4170/<chemin>`.
 3. Commiter directement sur `main` tout ce qui a changé : `content/`, le fichier de propositions, le rapport et les registres de `veille/` le cas échéant. Message : `docs(corpus): <origine>, N ajouts` (par exemple « veille du 2026-11-08 » ou « références demandées par Benjamin »), puis une ligne par chapitre touché (`- ch. 13 : Auteur (titre court)`) et les synthèses mises à jour.
 
-## 6. Répondre
+## 6. Archiver les nouvelles références
 
-Résumer en quelques lignes : les références ajoutées par chapitre, ce qui change dans les synthèses (nouveaux accords ou désaccords), ce qui reste à vérifier, et les liens vers le rapport et les synthèses modifiées.
+Après le commit, lancer `npm run archive` depuis la racine du dépôt principal. Le script n'archive que les références qui ne sont pas encore dans `sources/` : il enregistre chacune en Markdown dans `sources/<auteur>/` et met à jour `sources/README.md`. `sources/` est ignoré par git : rien à commiter.
+
+En exécution automatique (worktree `auto/…`), ne pas le lancer : le worktree n'a pas l'archive et la recréerait en entier, pour la perdre ensuite. Le prochain `npm run archive` lancé dans le dépôt principal rattrapera les références ajoutées.
+
+Un échec d'archivage ne bloque pas la mise à jour : le signaler dans la réponse.
+
+## 7. Répondre
+
+Résumer en quelques lignes : les références ajoutées par chapitre, ce qui change dans les synthèses (nouveaux accords ou désaccords), ce qui reste à vérifier, et les liens vers le rapport et les synthèses modifiées. Signaler les nouvelles références archivées avec le statut `court`, `partiel` ou `échec`.

@@ -246,6 +246,7 @@ Scripts (à lancer depuis la racine du dépôt) :
 - `npm run feeds -- check [nom]` : vérifie que les flux répondent.
 - `npm run feeds -- list [nom] [--since AAAA-MM-JJ]` : liste les publications nouvelles des sources, sans celles déjà traitées.
 - `npm run entries -- <propositions.md> [--dry-run]` : insère les entrées proposées sous leur chapitre et met à jour le total.
+- `npm run archive [-- --force] [-- <fragment d'URL>]` : copie personnelle de chaque référence en Markdown dans `sources/<auteur>/` (ignoré par git, ne jamais publier). Lancé par `/mise-a-jour`, sauf en exécution automatique.
 
 Exécution automatique :
 
